@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Mission Possible SFDC Test Automation Suite">
+
+    <listeners>
+        <listener class-name="com.framework.base.MyListener" />
+         <!--<listener class-name="com.framework.base.AnnotationTransformer"/>  --> 
+    </listeners>
+    
+    <test  name="QA Mission Possible Sanity and Regression Automation Pack" >
+
+		<classes>
+												<!-- FIT Regression-->
+	<!-- 	
+		<class name="scrum.sales.test.MP_Regression_SalesEnab_TC_02_Validate_UploadFiles_Manage_Library_In_Files_Page_Test"/>	
+		<class name="scrum.sales.test.MP_Release_Regression_Sales_TC28_Validate_the_details_on_Check_serviceability_page_Test"/>
+		<class name="scrum.sales.test.Pl02_SP1_MPOSS_36366_Log_A_Sales_Activity_Campaign_Leads_Test"/>
+		<class name="scrum.sales.test.MP_Regression_SalesEnab_TC_04_Log_An_Activity_Through_Opportunity_ServiceAccount_Contact"/>
+		<class name="scrum.sales.test.MP01_SalesEnab_TC_01_CreateOpportunity_Test"/>
+		<class name="scrum.sales.test.MP01_SalesEnab_TC_05_VerifyAccess_Opportunities_Test"/>
+		<class name="scrum.sales.test.MP_Regression_SalesEnab_R4B_to_B2B_Opportunity_redirection_ValidationTest"/>
+		<class name="scrum.sales.test.MP05_SalesEnab_TC_01_VerifyR4B_B2B_Navigation_Test"/>
+		<class name="scrum.sales.test.MP_Regression_25234_TC01_Validate_Voice_of_R4B_links_are_present_Test"/>
+		<class name="scrum.sales.test.MP_Regression_SalesEnab_TC_05_R4B_B2B_R4B_Account_Contact_EmpSize_AccStatusUpdate_ValidationTest"/>
+		<class name="scrum.sales.test.MP_Regression_SalesEnab_TC_06_R4B_B2B_R4B_ContactUpdate_EmpSizeUpdate_ValidationTest"/>
+		<class name="scrum.sales.test.MP_Regression_SalesEnab_TC_01_Validate_AE_Home_Page_Tabs_Test"/> 
+		<class name="scrum.sales.test.MP01_SalesEnab_TC_04_CreateQuote_NewServiceAccount_Test"/>
+	-->											
+											<!-- Scrum Regression-->		
+	
+		<!--	
+		<class name="scrum.sales.test.MP_Regression_SalesEnab_TC_01_Validate_AE_Home_Page_Tabs_Test"/>
+		<class name="scrum.sales.test.MP_SalesEnab_TC_01_CreateBusinessAccount_Esc_Test"/>
+		<class name="scrum.service.test.MP01_ServiceEnab_TC_01_CreateBusinessAccount_Test"/> 
+		<class name="scrum.sales.test.Pl22_SP5_MPOSS_57227_Validate_Lead_Conversion_LWC_to_Bus_Acc_Test"/>
+		<class name="scrum.sales.test.MP01_SalesEnab_TC_01_CreateOpportunity_Test"/>
+		<class name="scrum.sales.test.MP01_SalesEnab_TC_05_VerifyAccess_Opportunities_Test"/>
+		<class name="scrum.sales.test.MP_Regression_19952_TC_04_Validate_as_AE_clicking_Account_Ownership_Transfer_Test"/>
+		<class name="scrum.sales.test.MP_Regression_25234_TC01_Validate_Voice_of_R4B_links_are_present_Test"/>
+		<class name="scrum.sales.test.MP02_SalesEnab_TC_02_Validation_of_EquifaxCheck_CreditLimt_CreditRiskValue_Test"/>
+		<class name="scrum.sales.test.MP_22PI02_SP01_61823_Change_Business_Address_Omniscript_to_be_converted_from_Angular_to_LWC_Test"/>					
+		<class name="scrum.sales.test.MP_21PI04_SP01_49967_Campaign_Related_List_on_Leads_Contacts_and_Account_pages_Test"/>
+		<class name="scrum.sales.test.MP_Regression_SalesEnab_TC_04_Log_An_Activity_Through_Opportunity_ServiceAccount_Contact"/>
+		<class name="scrum.sales.test.Pl02_SP1_MPOSS_36366_Log_A_Sales_Activity_Campaign_Leads_Test"/> 	
+		<class name="scrum.sales.test.MP_Regression_SalesEnab_TC_02_Validate_UploadFiles_Manage_Library_In_Files_Page_Test"/>	
+		<class name="scrum.sales.test.MP_21PI03_SP05_MPOSS_47606_Create_New_Contact_and_Lead_Layouts_Test"/>
+		<class name="scrum.sales.test.PI02_SP6_MPOSS_41504_TC_01_Validate_on_Quote_Approval_page_R4B_Quote_Approval"/> 
+		<class name="scrum.sales.test.MP_22PI02_SP01_61823_Change_Business_Address_Omniscript_to_be_converted_from_Angular_to_LWC_Test"/>					
+	 -->	<!-- 	
+		<class name="scrum.sales.test.Pl02_SP5_MPOSS_42168_Validate_ACR_Page_Layout_Test"/>	
+		<class name="scrum.qm.test.MP_QM_TC_01_PBF_Agent_E2E_RDI_CompactFlow_Test"/>
+		<class name="scrum.sales.test.MP_Regression_Sales_Creation_of_Transactional_Opportunity_PBF_Test"/>
+		<class name="scrum.sales.test.MPOSS_21PI03_SP_6_Create_Unassigned_Account_for_Territories_Test"/> 
+		<class name="scrum.sales.test.MP_Regression_23670_TC01_Validate_Fraud_check_Test"/>
+		<class name="scrum.sales.test.MP_Regression_SalesEnab_TC_03_Validate_Multiple_Existing_ServicableLocations_Test"/>
+		<class name="scrum.sales.test.MP_Regression_SalesEnab_TC_39_Validate_n_Approve_Credit_Check_when_Available_less_thanEQ_Assigned_Test"/>
+		<class name="scrum.sales.test.MP06_Regression_SalesEnab_21987_TC01_Validate_R4BSalesOpportunities_present_Homepage_under_Performance_tab"/>
+		<class name="scrum.sales.test.MP01_SalesEnab_TC_04_CreateQuote_NewServiceAccount_Test"/>
+		<class name="scrum.sales.test.MP_21PI04_SP01_49955_Active_checkbox_on_Campaigns_is_automatically_checked_Test"/>	
+		<class name="scrum.sales.test.MP_Regression_42338_TC04_Validate_as_Credit_Ops_Verify_Mandatory_Fields_Are_Editable_Test"/> 
+		<class name="scrum.sales.test.Pl02_SP5_MPOSS_41394_Validate_Industry_SubIndustry_Help_Text_Test"/> 
+		<class name="scrum.sales.test.Pl02_SP1_MPOSS_36764_Validate_Industry_SubIndustry_Label_On_Create_BusinessAccount_Page_Test"/>
+		<class name="scrum.sales.test.Pl02_SP2_MPOSS_33120_LegalName__Verification_For_Accounts_SearchResult_Test"/>
+		<class name="scrum.sales.test.MP_Regression_SalesEnab_R4B_to_B2B_Opportunity_redirection_ValidationTest"/>	
+		<class name="scrum.sales.test.MP_Regression_Validate_Account_Object_Convert_the_Populate_R4B_External_Field_Apttus_Decom_PB_to_Flow_Test"/>
+		<class name="scrum.sales.test.PI22_01_SP04_MPOSS_55253_Validate_Permission_Sets_Test"/>
+		<class name="scrum.sales.test.Pl02_SP3_MPOSS_38685_Validate_Cx_360_Layout_Business_Acc_Test"/> 
+		<class name="scrum.sales.test.Pl02_SP3_MPOSS_38950_Validate_Industry_SubIndustry_Edit_Approvals_Test"/>	
+		-->	
+		
+								<!-- NIS User Execution and PBF from Service and QM -->
+		<!-- 
+ 		<class name="scrum.service.test.MP01_ServiceEnab_TC_01_CreateBusinessAccount_Test"/> 
+ 		<class name="scrum.service.test.MP01_ServiceEnab_TC_02_CreateServiceAccount_Test"/> 
+		<class name="scrum.service.test.MP01_ServiceEnab_TC_03_CreateBillingAccount_Test"/>
+		<class name="scrum.service.test.MP01_ServiceEnab_TC_04_CreateContact_Test"/>
+		<class name="scrum.qm.test.MP_QM_TC_01_PBF_Agent_E2E_BusinessInternet_CompactFlow_Test"/>
+		-->
+											<!-- Deprecated-->
+		<!-- 
+		<class name="scrum.sales.test.MP05_SalesEnab_TC_02_VerifyR4B_B2B_Navigation_ForProductSubProduct_OpportunityCreation_Test"/>
+		<class name="scrum.sales.test.Pl02_SP4_MPOSS_38550_PartnerCommunities_Validate_Hide_Billing_Account_For_Vars_Account_Creation_Test"/> 
+		<class name="scrum.sales.test.MP_Regression_PartnerCommunities_CreateAccount_Opp_Quote_Order"/>
+		<class name="scrum.sales.test.MP01_SalesEnab_TC_02_CreateQuote_OnNetServiceability_Test"/>	
+		<class name="scrum.sales.test.MP01_SalesEnab_TC_03_CreateQuote_OffNetServiceability_Test"/> 
+		<class name="scrum.sales.test.MP_Release_Regression_Sales_TC28_Validate_the_details_on_Check_serviceability_page_Test"/>
+		-->
+	  </classes>
+   	
+	</test>
+  	
+ </suite>
+

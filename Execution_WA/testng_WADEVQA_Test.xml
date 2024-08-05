@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WACC SFDC Test Automation Suite">
+
+	<listeners>
+		<listener class-name="com.framework.base.MyListener" />
+	</listeners>
+
+	<test name="QA Wireless Accleration  Automation Pack">
+		<classes>
+			<class
+				name="com.Regression_WADEVQA_test.WA_TC_01_CreateQuote_VerifyPlansAndBYOD_Test" />
+			<!-- <class
+				name="com.Regression_WADEVQA_test.WA_TC_02_CreateQuote_VerifyPlansAndDevices_Test" /> -->
+			<!-- <class
+				name="com.Regression_WADEVQA_test.WA_TC_03_CreateQuote_VerifyPlansAndDevicesWithDP_Acc_Test" />
+			<class
+				name="com.Regression_WADEVQA_test.WA_TC_04_CreateQuote_VerifyDevicesFirstAndPlans_NoDP_No_Acc_Test" />
+			<class
+				name="com.Regression_WADEVQA_test.WA_TC_05_CreateQuote_VerifyDeviceFirstAndPlansWithDP_Acc_Test" />
+			<class
+				name="com.Regression_WADEVQA_test.WA_TC_06_CreateQuote_VerifyDevicesFirstAndPlans_WithDP_No_Acc_Test" /> -->
+		</classes>
+	</test>
+</suite>

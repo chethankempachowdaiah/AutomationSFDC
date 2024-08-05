@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Mission Possible SFDC Test Automation Suite">
+
+	<listeners>
+        <listener class-name="com.framework.base.MyListener" />
+         <!--<listener class-name="com.framework.base.AnnotationTransformer"/>  --> 
+    </listeners>
+    
+    <test  name="QA Mission Possible Sanity and Regression Automation Pack" >
+      
+		<classes>
+
+			<!-- <class name="scrum.om.test.MP01_OM_TC_01_OrchestrationTasks_Creation_Test"/> 
+				<class name="scrum.om.test.MP01_OM_TC_02_Assets_Creation_Test"/> <class name="scrum.om.test.MP01_OM_TC_03_BillingAccountCreation_Test"/> 
+				<class name="scrum.om.test.MP01_OM_TC_04_VerifyAccess_Orders_Test"/> 
+				<class name="scrum.om.test.MP01_OM_TC_05_VerifyAccess_ManualQueues_Test"/> 
+				<class name="scrum.om.test.MP03_OM_TC_01_VerifyTaskState_Ready_Running_Task1_Task2_Test"/> 
+<class name="scrum.om.test.MP03_OM_TC_02_VerifyTaskState_Pending_Running_Task1_Task2_Test"/> 
+				<class name="scrum.om.test.MP_Regression_OM_Validate_OrderActivation_E2E_RDI_Test"/> -->
+				
+				<!-- <class name="com.regression_03.test.PI2SP1_US_32916_OM_Validate_CableProvisioningQueue_for_INT_IBLC_TV_Test"/> -->
+			<!-- 	<class name="scrum.om.test.PI2SP1_US_35937_OM_Validate_OrderDecomposition_Subtask_Test"/>-->
+		<!-- 		<class name="com.regression_03.test.PI2SP2_US_29641_OM_for_INT_IBLC_TV_Validate_SendAppointmentLetter_Test"/> 
+					<class name="com.regression_03.test.PI2SP2_US_35966_OM_for_INT_IBLC_TV_Validate_CreateCableOrder_Test"/> 
+					<class name="com.regression_03.test.PI2SP3_US_36578_OM_for_INT_IBLC_TV_Validate_UpdateOff365_Test"/> 
+					<class name="com.regression_03.test.PI2SP3_US_36678_OM_for_INT_IBLC_TV_Validate_ContractType_Field_Test"/>
+					<class name="com.regression_03.test.PI2SP4_US_38802_OM_for_INT_IBLC_TV_Validate_WelcomeLetter_Test"/> -->
+					
+			<!-- ################################### RDI E2E ########################################### -->
+  <!--     <class name="scrum.om.test.MP_Regression_OM_Validate_OrderActivation_E2E_RDI_Test"/> -->
+
+			<!-- ################################### RDI Cancel order ########################################### -->
+  <!--        <class name="scrum.om.test.MP_OM_RDI_CancelOrder1_Test"/> -->
+  <!--     <class name="scrum.om.test.MP_OM_RDI_Order_with_running_task_Review_Order_Details_cancel_before_PONR2_Test"/> -->
+<!-- 	 <class name="scrum.om.test.MP_OM_RDI_FreezeOrder_Reinstate_Order_Test"/> -->
+<!--      <class name="scrum.om.test.MP_OM_RDI_Freeze_CancelOrder_Test"/> -->
+
+			<!-- ################################### Cable L2 E2E ########################################### -->
+      <class name="scrum.om.test.OM_Regression_E2E_CableL2_For_All_INT_IBLC_TV_Test"/>
+<!-- 	<class name="com.regression_01.test.MP_Regression_OM_GBJ_E2E_CableL2_Test"/> -->
+			
+			<!-- ################################### Cable Fail Task ########################################### -->
+ 	<!-- 		<class name="scrum.om.test.PI2SP4_US_38142_OM_for_INT_IBLC_TV_Validate_FailTaskButton_Test"/> -->
+
+			<!-- ################################### Cable Cancel order ########################################### -->
+	<!--    <class name="scrum.om.test.MP_OM_Cable_CancelOrder_Test" /> -->
+	<!--    	<class name="scrum.om.test.MP_OM_Cable_ManualTask_FailTask_CancelOrder_Test" /> -->
+	<!--    <class name="scrum.om.test.MP_OM_Cable_running_callout_task_And_fallout_task_InReady_state_order_cancellation_before_PONR_Test" />  -->   
+   <!--        <class name="scrum.om.test.MP_OM_Cable_order_no_running_tasks_fallout_task_CreateAccount_Failed_Test" /> -->
+         
+ <!--    <class name="scrum.om.test.MP_OM_Cable_order_running_CallOut_And_fallout_task_CreateAccount_In_SS_Test" /> -->
+ <!--   <class name="scrum.om.test.MP_OM_Cable_M365_order_with_running_manual_task_order_cancellation_before_PONR_Test" /> -->
+ 
+ 
+			<!-- <class name="scrum.om.test.MP_Regression_Create_New_BusinessAccount"/> -->
+
+		</classes>
+
+	</test>
+
+</suite>
+

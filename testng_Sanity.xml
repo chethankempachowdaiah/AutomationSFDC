@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Mission Possible SFDC Test Automation Suite">
+
+    <listeners>
+        <listener class-name="com.framework.base.MyListener" />
+         <!--<listener class-name="com.framework.base.AnnotationTransformer"/>  --> 
+    </listeners>
+    
+    <test  name="QA Mission Possible Sanity and Regression Automation Pack" >
+      
+	<classes>
+	   
+	   
+	        <!--     SERVICE ENABLEMENT 
+	        
+	  <class name="scrum.service.test.MP01_ServiceEnab_TC_01_CreateBusinessAccount_Test"/>
+      <class name="scrum.service.test.MP01_ServiceEnab_TC_02_CreateServiceAccount_Test"/>
+      <class name="scrum.service.test.MP01_ServiceEnab_TC_03_CreateBillingAccount_Test"/> 
+      <class name="scrum.service.test.MP01_ServiceEnab_TC_04_CreateContact_Test"/> 
+      <class name="scrum.service.test.MP01_ServiceEnab_TC_05_EmailToCase_Test"/>
+      <class name="scrum.service.test.MP01_ServiceEnab_TC_06_VerifyAccess_Accounts_Test"/>
+      <class name="scrum.service.test.MP01_ServiceEnab_TC_07_VerifyAccess_Contacts_Test"/>   
+      
+      <class name="scrum.service.test.MP04_ServiceEnab_TC_01_ChangeEmployeeSize_InBusinessAccount_Test"/>  
+      <class name="scrum.service.test.MP04_ServiceEnab_TC_02_CreateChildBusinessAccount_Test"/> 
+      <class name="scrum.service.test.MP04_ServiceEnab_TC_03_ChangeLegalNameBusinessAccount_Approve_Test"/>  
+      <class name="scrum.service.test.MP04_ServiceEnab_TC_04_ChangeLegalNameBusinessAccount_Reject_Test"/>     
+      <class name="scrum.service.test.MP04_ServiceEnab_TC_05_CaseInQueue_UserNotAllowedToEdit_Test"/>  
+      <class name="scrum.service.test.MP04_ServiceEnab_TC_06_CaseOwned_UserAllowedToEdit_Test"/>   
+      <class name="scrum.service.test.MP04_ServiceEnab_TC_07_UserProactivelyCreatesNewCase_Test"/>  
+      <class name="scrum.service.test.MP04_ServiceEnab_TC_08_CreateQuickText_InsertQuickTextInEmail_Test"/> 
+      
+  	  <class name="scrum.service.test.MP05_ServiceEnab_TC_02_EnableCommunity_ValidateServiceGroup_TrobuleshootAccess_Test"/>
+      
+      <class name="scrum.service.test.MP06_ServiceEnab_TC_02_Link_DeLink_Account_MasterAccount_Test"/>
+     
+      <class name="scrum.service.test.MP11_Service_TC_01_Validate_Knowledge_Menu_ArticleCreation_Details_WidgetInCase_Test"/>  
+      <class name="scrum.service.test.MP11_ServiceEnab_TC_02_MandatoryFieldsNotUpdated_CaseNotResolved_MandatoryFieldsUpdated_CaseStausToResolved_Test"/>
+     
+      <class name="scrum.service.test.MP14_ServiceEnab_CaseInQueue_NotEditable_InProgressCase_NotAllowedToNew_Test"/>     
+     
+       <class name="scrum.service.test.MP_Regression_ServiceEnab_TC_01_Validate_Subscription_Page_Test"/>
+       <class name="scrum.service.test.MP_Regression_ServiceEnab_TC_02_Validate_Guided_Case_Creation_Test"/>
+     
+      <class name="com.regression_03.test.TC_01_Validate_ACR_permissions_InContact_EndorsorAssessorDeciderCoachInfluencer_SigningAuth_InBusAcc_Test"/>
+      <class name="com.regression_03.test.TC_02_ModifyRoles_Business_Service_Billing_Account_Validate_ACR_Test"/>
+      <class name="com.regression_03.test.TC_03_Vaidate_DuplicateContact_InactiveToActiveContacts_CreateIndirectACR_Test"/>
+      <class name="com.regression_03.test.TC_04_Validate_ReActivateContact_CreateACR_ModifyRoles_VerifyPremiseSerAddress_Test"/> --> 
+                                          
+      
+         <!--       SALES ENABLEMENT 
+         
+      <class name="scrum.sales.test.MP01_SalesEnab_TC_01_CreateOpportunity_Test"/>
+      <class name="scrum.sales.test.MP01_SalesEnab_TC_02_CreateQuote_OnNetServiceability_Test"/>
+   	  <class name="scrum.sales.test.MP01_SalesEnab_TC_04_CreateQuote_NewServiceAccount_Test"/>
+      <class name="scrum.sales.test.MP01_SalesEnab_TC_05_VerifyAccess_Opportunities_Test"/>
+      
+      <class name="scrum.sales.test.MP05_SalesEnab_TC_01_VerifyR4B_B2B_Navigation_Test"/>
+      <class name="scrum.sales.test.MP05_SalesEnab_TC_02_VerifyR4B_B2B_Navigation_ForProductSubProduct_OpportunityCreation_Test"/>    
+     
+      <class name="scrum.sales.test.MP_Regression_SalesEnab_TC_01_Validate_AE_Home_Page_Tabs_Test"/>
+      <class name="scrum.sales.test.MP_Regression_SalesEnab_TC_03_Validate_UploadFiles_Manage_Library_In_Files_Page_Test"/>
+      <class name="scrum.sales.test.MP_Regression_SalesEnab_TC_04_Log_An_Activity_Through_Opportunity_ServiceAccount_Contact"/>  -->
+    
+       <!--       QUOTE MANAGEMENT -->
+       
+        <class name="scrum.qm.test.MP09_QM_TC_01_GBJ_CreateQuoteByGBJ_Internet_TV_Test"/>
+       
+      <class name="scrum.qm.test.MP01_QM_TC_01_QuoteAcceptance_Test"/>
+      <class name="scrum.qm.test.MP01_QM_TC_02_Quote_VerifyQuotePDFAttachment_Test"/>
+      <class name="scrum.qm.test.MP01_QM_TC_03_Quote_CreateOrder_Test"/>
+      <class name="scrum.qm.test.MP01_QM_TC_04_VerifyAccess_Quotes_Test"/>  
+      
+     
+      
+
+      <class name="scrum.qm.test.MP09_QM_TC_02_ValidateInstallationDiscount_Hybridcart_Test"/>
+      <class name="scrum.qm.test.MP09_QM_TC_03_ValidateEPCChanges_HybridCart_Test"/>     
+      <class name="scrum.qm.test.MP12_QM_GuidedByJourney_IBLC_Sanity_Test"/>
+     
+      
+      <!--       ORDER MANAGEMENT--> 
+      
+    <!--   <class name="scrum.om.test.MP01_OM_TC_01_OrchestrationTasks_Creation_Test"/>
+      <class name="scrum.om.test.MP01_OM_TC_02_Assets_Creation_Test"/>
+      <class name="scrum.om.test.MP01_OM_TC_03_BillingAccountCreation_Test"/>
+      <class name="scrum.om.test.MP01_OM_TC_04_VerifyAccess_Orders_Test"/>
+      <class name="scrum.om.test.MP01_OM_TC_05_VerifyAccess_ManualQueues_Test"/>
+     
+      <class name="scrum.om.test.MP03_OM_TC_01_VerifyTaskState_Ready_Running_Task1_Task2_Test"/>
+      <class name="scrum.om.test.MP03_OM_TC_02_VerifyTaskState_Pending_Running_Task1_Task2_Test"/> --> 
+      
+       <!--       COMMUNITIES--> 
+        
+   <!--   <class name="scrum.communities.test.MP_Communities_TC_01_VerifyMBH_ComBadge_Header_BusCases_ComTabs_Test"/>
+      <class name="scrum.communities.test.MP_Communities_TC_02_VerifyMBH_QuickLinks_ToggleCom_Footer_Test"/>
+      <class name="scrum.communities.test.MP_Communities_TC_03_VerifyCaseAttachment_Upload_Delete_Test"/>
+      <class name="scrum.communities.test.MP_Communities_TC_04_VerifyOrderDetails_Test"/>
+      <class name="scrum.communities.test.MP_Communities_TC_05_Validation_Of_Case_Layout_DynamicReasonList_BasedOn_Product_AccountNames_CaseComments_Test"/>  --> 
+   
+
+      
+     </classes>
+	</test>
+  	
+ </suite>
+

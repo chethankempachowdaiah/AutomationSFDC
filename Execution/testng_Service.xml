@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Mission Possible SFDC Test Automation Suite">
+
+    <listeners>
+        <listener class-name="com.framework.base.MyListener" />
+         <!--<listener class-name="com.framework.base.AnnotationTransformer"/>  --> 
+    </listeners>
+    
+    <test  name="QA Mission Possible Sanity and Regression Automation Pack" >
+      
+<!--    <groups>
+
+            <run>
+                <include name = "sanity">
+                <exclude name = "regression">
+                              
+                </exclude>
+                </include>
+            </run>
+
+        </groups>   -->
+         
+		<classes>
+<!--  <class name="scrum.service.test.MPOSS_47515_PreventingSAContactOfProspectAccountNotToRegisteredInCommunitieWhenSA_ONWhenContactRelationshipsIsManaged_Test"/>
+	  
+      <class name="scrum.service.test.MP01_ServiceEnab_TC_01_CreateBusinessAccount_Test"/> 
+      
+      <class name = "scrum.service.test.MPOSS_56307_CreateBusinessAccount_Test"/> --> 
+   
+<!--  <class name="scrum.service.test.MP01_ServiceEnab_TC_02_CreateServiceAccount_Test"/> -->
+
+<!--  <class name="scrum.service.test.MP01_ServiceEnab_TC_03_CreateBillingAccount_Test"/> -->
+        
+<!--  <class name="scrum.service.test.MP01_ServiceEnab_TC_04_CreateContact_Test"/> -->
+      
+<!--  <class name="scrum.service.test.MP01_ServiceEnab_TC_05_EmailToCase_Test"/>  
+
+      <class name="scrum.service.test.MP01_ServiceEnab_TC_06_VerifyAccess_Accounts_Test"/> -->
+        
+<!--  <class name="scrum.service.test.MP01_ServiceEnab_TC_07_VerifyAccess_Contacts_Test"/> 
+
+      <class name="scrum.service.test.MP04_ServiceEnab_TC_01_ChangeEmployeeSize_InBusinessAccount_Test"/>    
+      
+      <class name="scrum.service.test.MP04_ServiceEnab_TC_01_ChangeBusinessAddress_InBusinessAccount_Test"/> -->  
+      
+<!--  <class name="scrum.service.test.MP04_ServiceEnab_TC_01_ChangePrimaryContact_InBusinessAccount_Test"/> 
+ 
+      <class name="scrum.service.test.MP04_ServiceEnab_TC_02_CreateChildBusinessAccount_Test"/>    
+      
+      <class name="scrum.service.test.MP04_ServiceEnab_TC_03_ChangeLegalNameBusinessAccount_Approve_Test"/> -->     
+       
+<!--  <class name="scrum.service.test.MP04_ServiceEnab_TC_04_ChangeLegalNameBusinessAccount_Reject_Test"/> 
+         
+      <class name="scrum.service.test.MP04_ServiceEnab_TC_05_CaseInQueue_UserNotAllowedToEdit_Test"/>
+   
+      <class name="scrum.service.test.MP04_ServiceEnab_TC_06_CaseOwned_UserAllowedToEdit_Test"/>   
+       
+      <class name="scrum.service.test.MP04_ServiceEnab_TC_07_UserProactivelyCreatesNewCase_Test"/> 
+      
+      <class name="scrum.service.test.MP06_ServiceEnab_TC_01_Create_Remove_Relationship_Contact_BusinessAccount_Test"/> 
+       
+      <class name="scrum.service.test.MP04_ServiceEnab_TC_08_CreateQuickText_InsertQuickTextInEmail_Test"/>  
+    
+      <class name="scrum.service.test.MP05_ServiceEnab_TC_02_EnableCommunity_ValidateServiceGroup_TrobuleshootAccess_Test"/> 
+
+      <class name="scrum.service.test.MP06_ServiceEnab_TC_02_Link_DeLink_Account_MasterAccount_Test"/>  
+          
+      <class name="scrum.service.test.MP11_ServiceEnab_TC_02_MandatoryFieldsNotUpdated_CaseNotResolved_MandatoryFieldsUpdated_CaseStausToResolved_Test"/>  -->   
+ 
+<!--  <class name="scrum.service.test.MP14_ServiceEnab_CaseInQueue_NotEditable_InProgressCase_NotAllowedToNew_Test"/> -->
+     
+<!--  <class name="scrum.service.test.MP_Regression_ServiceEnab_TC_01_Validate_Subscription_Page_Test"/> 
+ 
+      <class name="scrum.service.test.MP_Regression_ServiceEnab_TC_02_Validate_Guided_Case_Creation_Test"/> -->     
+     
+<!-- <class name="scrum.service.test.MP_Regression_ServiceEnab_TC_03_Validate_ACR_InContact_DifferentContactRoles_InBusAcc_Test"/>
+      
+     <class name="scrum.service.test.MP_Regression_ServiceEnab_TC_04_ModifyRoles_Business_Service_Billing_Account_Validate_ACR_Test"/>
+      
+     <class name="scrum.service.test.MP_Regression_ServiceEnab_TC_05_Vaidate_DuplicateContact_InactiveToActiveContacts_CreateIndirectACR_Test"/> -->
+
+<!-- <class name="scrum.service.test.MP_Regression_ServiceEnab_TC_06_Validate_ReActivateContact_CreateACR_ModifyRoles_VerifyPremises_Test"/>  --> 
+
+<!-- <class name="scrum.service.test.MPOSS38307_SFDC_CreateCase_Validate_In_SNOW"/> 
+	  
+	 <class name="scrum.service.test.MPOSS_53191_WEB2CASE_WireLine_DarkFiber"/> 
+	  
+ 	 <class name="scrum.service.test.MPOSS_37452_Validate_NoOfferAvailable_In_TelliOffer_For_Service_Agent"/>    
+	  
+     <class name="scrum.service.test.MPOSS_26258_UserCreatesGuidedCaseWithBusinessPhone_Test"/>  
+
+     <class name="scrum.service.test.MPOSS_37452_ValidateMilestones_For_Service_Agent"/>      
+          
+     <class name="scrum.service.test.MPOSS_36059_Revision_Of_Contact_Create_Test"/> 
+  
+     <class name="scrum.service.test.MPOSS_48829_Create_Contact_From_Accounts_Test"/> -->    
+    
+<!-- <class name="scrum.service.test.MPOSS_53066_Create_Contact_Role_General_Test"/> 
+ 
+     <class name="scrum.service.test.MPOSS_47274_And_MPOSS_52430_UserCreatesFraudCaseFromCustomerCase_Test"/> 
+       
+     <class name="scrum.service.test.MPOSS_50841_UserCreatesFraudCaseFromAccounts_Test"/> 
+     
+     <class name="scrum.service.test.MPOSS_51660_UserCreatesFraudCaseFromContact_Test"/>   
+     
+     <class name="scrum.service.test.MPOSS_51704_FraudCaseNotShownByCommunityUser_Test"/> -->
+     
+<!-- <class name="scrum.service.test.MPOSS_47274_And_MPOSS_52430_UserCreatesFraudCaseFromCustomerCase_DataDrivenTest"/>
+     
+     <class name="scrum.service.test.MPOSS_50305_SurveyScoreVisualizationOnCaseAndAccount_Test"/>  -->
+
+<!-- <class name="scrum.service.test.MPOSS_25428_CreateNewBusinessAccountAndValidateEntitlementAssociated_Test"/> -->
+     
+<!-- <class name="scrum.service.test.Regression_ServiceEnab_MPOSS_23817_TC01_ValidateMilestoneOnTechnicalSupportCasePriorityHigh_Test"/>  
+     
+     <class name="scrum.service.test.PI4SP06_MPOSS_47401_TC02_ValidateMilestoneOnTechnicalSupportCasePriorityCritical_Test"/> 
+     
+     <class name="scrum.service.test.MPOSS_43655_UserCreatesETMCaseFromCustomerCase_DataDrivenTest"/>  
+     
+     <class name="scrum.service.test.Regression_ServiceEnab_TC07_UserModifyDuplicateContactFoundBusinessAccount_Test"/> 
+         
+     <class name="scrum.service.test.MPOSS_56157_TC01_ValidateCaseOwnerGetNotifiedWhileMakingChangeFromAnotherProfileForServiceTypeCase_Test"/> 
+     
+     <class name="scrum.service.test.MPOSS_56157_TC02_ValidateCaseOwnerGetNotifiedWhileMakingChangeFromAnotherProfileForTechnicalSupportTypeCase_Test"/>   -->                
+	  
+<!-- <class name="scrum.service.test.Regression_ServiceEnab_TC10_ValidateACRPermissionBusinessContactRoleEndorsor_Test"/>  
+	  
+     <class name="scrum.service.test.Regression_ServiceEnab_TC11_ValidateACRPermissionBusinessContactRoleSigningAuthority_Test"/> 
+	 
+     <class name = "scrum.service.test.Regression_ServiceEnab_TC12_ValidateACRPermissionBusinessContactManageRelationshipRoleAdmin_Test"/> 
+	  
+	 <class name = "scrum.service.test.Regression_ServiceEnab_TC13_ValidateACRPermissionBusinessContactManageRelationshipRoleSA_Test"/>   
+	 
+     <class name = "scrum.service.test.MPOSS_43655_UserCreatesETMCaseFromCustomerCase_Test"/>  -->
+
+<!-- <class name = "scrum.service.test.MPOSS_52734_UserSeeDetailsForHoverFuctionCustomerCase_Test"/> -->
+     
+<!-- <class name = "scrum.service.test.MPOSS_55295_ValidateRelationshipScoreIsDisplayedBusinessAccountOfCustomerCase_Test"/> 
+     
+     <class name = "scrum.service.test.Regression_ServiceEnab_TC46_ValidateReactivationOfInactiveBusinessContact_Test"/> -->  
+     
+<!-- <class name = "scrum.service.test.Regression_ServiceEnab_TC47_ValidateDuplicateInactiveBusinessContactActivation_Test"/>  
+     
+     <class name = "scrum.service.test.Regression_ServiceEnab_TC48_ValidateDuplicateBusinessContactActivationServiceAccount_Test"/> 
+     
+     <class name = "scrum.service.test.Regression_ServiceEnab_TC49_ValidateDuplicateBusinessContactActivationServiceAccountServiceProfile_Test"/> 
+     
+     <class name = "scrum.service.test.Regression_ServiceEnab_TC50_ValidateReactivationOfInactiveBusinessContactServiceProfile_Test"/> --> 
+     
+<!-- <class name = "scrum.service.test.Regression_ServiceEnab_TC51_ValidateShippingAddressEmptySameBusinessAccountAddress_Test"/>  
+     
+     <class name = "scrum.service.test.MPOSS_59408_ValidateErrorMessageForCaseWithNoContact_Test"/> -->
+     
+<!-- <class name = "scrum.service.test.MPOSS_59177_ValidateRootAccountOnBillingAccount_Test"/>  
+     
+     <class name = "scrum.service.test.Regression_ServiceEnab_TC52_ValidateACRPermissionBusinessContactManageRelationshipServiceProfile_Test"/>   
+     
+     <class name = "scrum.service.test.MPOSS_27211_ValidateMilestoneOnTechnicalSupportCase_Test"/>  
+     
+     <class name = "scrum.service.test.MPOSS_59429_ValidateAccountOpenClickedOnPopUpInCase_Test"/> --> 
+     
+<!-- <class name = "scrum.service.test.MPOSS_57916_TC01_ValidateServiceCaseAutoClosedWhenETML5Truck_Test"/> 
+     
+     <class name = "scrum.service.test.MPOSS_57916_TC02_ValidateTechnicalSupportCaseAutoResolveWhenETML5Truck_Test"/> 
+     
+     <class name = "scrum.service.test.MPOSS_57916_TC03_ValidateTechnicalSupportSNOWCaseAutoResolveWhenETML5Truck_Test"/> 
+
+     <class name = "scrum.service.test.MPOSS_58624_ValidateAECanViewETMInR4BConsole_Test"/> -->
+     
+<!-- <class name = "scrum.service.test.MPOSS_57530_CreateServiceAccount_Test"/>  
+     
+     <class name = "scrum.service.test.MPOSS_55872_TC01_CreateExternalTicket_Test"/>  
+     
+     <class name = "scrum.service.test.MPOSS_55872_TC02_CreateExternalTicket_Test"/> -->
+        
+<!-- <class name = "scrum.service.test.MPOSS_60557_TC01_ValidateCaseOwnerGetNotifiedForAddingCommentsServiceType_Test"/>  
+     
+     <class name = "scrum.service.test.MPOSS_60557_TC02_ValidateCaseOwnerGetNotifiedForAddingCommentsTechnicalSupportType_Test"/> 
+     
+     <class name = "scrum.service.test.MPOSS_61725_TC01_ValidateEnhancementOnNextBestActionWireline_Test"/>  
+     
+     <class name = "scrum.service.test.MPOSS_61725_TC02_ValidateEnhancementOnNextBestActionWireless_Test"/>  
+     
+     <class name = "scrum.service.test.MPOSS_61646_TC01_ValidateErrorResponseFromSnowInCommentsTechnicalSupport_Test"/> --> 
+     
+<!--  <class name = "scrum.service.test.MPOSS_61646_TC02_ValidateErrorResponseFromSnowInCommentsTechnicalSupport_Test"/>   
+     
+     <class name = "scrum.service.test.MPOSS_61106_TC03_ValidateUserAbleToSeeFlexCardFraudCaseAEProfile_Test"/>  
+     
+     <class name = "scrum.service.test.MPOSS_61106_TC02_ValidateUserAbleToSeeFlexCardFraudCaseFraudOpsProfile_Test"/> 
+     
+     <class name = "scrum.service.test.MPOSS_63156_TC01_ValidateWebAndMonitoringNotSelectedServiceCase_Test"/>  
+     
+     <class name = "scrum.service.test.MPOSS_63156_TC02_ValidateWebAndMonitoringNotSelectedTechnicalSupportCase_Test"/>  
+     
+     <class name = "scrum.service.test.MPOSS_63156_TC03_ValidateWebToCaseCreationFromCommunity_Test"/>  -->
+     
+     <class name = "scrum.service.test.MPOSS_61066_ValidateContactDetailsFromR4BToB2B_Test"/>
+	  
+	   </classes>
+   	
+	</test>
+  	
+ </suite>
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Mission Possible SFDC Test Automation Suite">
+
+    <listeners>
+        <listener class-name="com.framework.base.MyListener" />
+         <!--<listener class-name="com.framework.base.AnnotationTransformer"/>  --> 
+    </listeners>
+    
+    <test  name="QA Mission Possible Sanity and Regression Automation Pack" >
+      
+		<classes>
+	  <!--   <class name="scrum.qm.test.MP_Reg_QM_Validate_quote_status_after_NFDB"/> -->
+	  
+	  <!-- ################################### RDI Pricing Validation ########################################### -->
+	<!--    <class name="scrum.qm.test.MP_QM_RDI_Pricing_Validation_ON_NET_Test"/> -->
+	<!--     <class name="scrum.qm.test.MP_QM_RDI_Pricing_Validation_ABA_ON_Test"/>
+	     <class name="scrum.qm.test.MP_QM_RDI_Pricing_Validation_ABA_EAST_Test"/> -->
+	     
+	  <!-- ################################### Cable Product Pricing Validation ################################# -->
+	 <!--      <class name="scrum.qm.test.MP_QM_InterOff365TV_PriceValidation_EPC_Release"/> -->
+	 <!--      <class name="scrum.qm.test.MP_QM_Internet_Standalone_Price_Validation_Test"/> -->
+	 <!--   <class name="scrum.qm.test.MP_QM_InterOff365TV_PriceValidation_EPC_Release"/> -->
+	    
+	<!-- ################################### Cable Fraud Hold ########################################### -->
+	   <class name="scrum.qm.test.MP_FraudHold_PBF_Agent_E2E_BuisnessInternet_Office365"/>
+	     	     	 
+	  <!-- ################################### Cable Multisite ################################# -->
+ <!--   <class name="scrum.qm.test.MP_Multisite_FraudHold_PBF_Agent_E2E_BuisnessInternet_Office365"/> -->
+
+		 
+    <!--    <class name="scrum.qm.test.MP01_QM_TC_01_QuoteAcceptance_Test"/> 
+	         <class name="scrum.qm.test.MP01_QM_TC_02_Quote_VerifyQuotePDFAttachment_Test"/> 
+			 <class name="scrum.qm.test.MP01_QM_TC_03_Quote_CreateOrder_Test"/>
+	         <class name="scrum.qm.test.MP01_QM_TC_04_VerifyAccess_Quotes_Test"/> 
+	         <class name="scrum.qm.test.MP_PBF_Agent_E2E_BusinessInternet_Sanity_NFDB"/>
+	         <class name="scrum.qm.test.MP_Reg_QM_Validate_quote_status_after_NFDB"/>
+			<class name="scrum.qm.test.MP_Reg_QM_TC035_ValidateTaskCreatedToSelectSiteContact"/>
+            <class name="scrum.qm.test.MP09_QM_TC_01_CreateQuoteByGBJ_Internet_TV_Test"/> 
+            
+            <class name="scrum.qm.test.MP09_QM_TC_02_ValidateInstallationDiscount_Hybridcart_Test"/> 
+            <class name="scrum.qm.test.MP09_QM_TC_03_CreateQuoteInHybridCart_Test"/>
+
+            <class name="scrum.qm.test.MP12_QM_TC_01_CreateQuoteByGBJ_IBLC_Test"/>
+  			<class name="scrum.qm.test.MP12_QM_TC_02_HybridCart_IBLC_PriceCost_Validation_Test"/>
+            
+            <class name="scrum.qm.test.MP15_QM_TC_01_CreateQuoteByGBJ_RDI_Test"/>
+ 
+            <class name="scrum.qm.test.MP16_QM_TC_01_Validate_NewSiteContact_Creation_OrderPage_ON_Test"/>--> 
+ 
+	   	</classes>
+   	
+	</test>
+  	
+ </suite>
+

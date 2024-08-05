@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Mission Possible SFDC Test Automation Suite">
+
+    <listeners>
+        <listener class-name="com.framework.base.MyListener" />
+         <!--<listener class-name="com.framework.base.AnnotationTransformer"/>  --> 
+    </listeners>
+    
+    <test  name="QA Mission Possible Sanity and Regression Automation Pack" >
+     
+	<classes>
+	    
+	    <class name="scrum.communities.test.MP_Communities_TC_06_Case_Creation_Service_Test"/>
+	 <!--     <class name="scrum.qm.test.MP12_QM_TC_01_CreateQuoteByGBJ_IBLC_Test"/>   
+   
+  <class name="scrum.communities.test.MP_Communities_TC_06_Case_Creation_Service_Test"/>
+	
+	     <class name="poc.mpdemo.test.MP_ServiceEnab_TC_01_CreateBusinessAccount_Demo_Test"/> 
+         <class name="com.mp01.test.MP_SalesEnab_TC_03_CreateQuote_OffNetServiceability_Test"/>   
+	  
+	  <class name="com.mp01.test.MP_CPQ_OM_TC_07_Quote_AddProductsToCart_Test"/>  
+      <class name="com.mp01.test.MP_CPQ_OM_TC_08_Quote_ConfigureQuote_Test"/> 
+      <class name="com.mp01.test.MP_CPQ_OM_TC_09_Quote_AcceptQuote_Test"/>  
+      <class name="com.mp01.test.MP_CPQ_OM_TC_11_CreateOrder_Test"/>   
+      <class name="com.mp01.test.MP_CPQ_OM_TC_12_Order_SubmitOrder_Test"/> 
+         <class name="com.mp01.test.MP_CPQ_OM_TC_14_OrchestrationTasks_Completion_Test"/>  
+      <class name="com.mp01.test.MP_CPQ_OM_TC_15_Order_Activation_Test"/> 
+      <class name="com.mp01.test.MP_CPQ_OM_TC_16_Assets_Creation_Test"/> 
+      
+        <class name="com.mp01.test.MP_CPQ_OM_TC_10_Quote_VerifyQuotePDFAttachment_Test"/> 
+   	  <class name="com.mp01.test.MP_CPQ_OM_TC_13_OrchestrationTasks_Creation_Test"/>
+   	  
+   	       <class name="com.mp04.test.MP_ServiceEnab_TC_05_CaseInQueue_UserNotAllowedToEdit_Test"/>
+     <class name="com.mp04.test.MP_ServiceEnab_TC_06_CaseOwned_UserAllowedToEdit_Test"/>  
+      
+    
+    <class name="mp.regression.test.MP_Regression_TC_10_Validate_ClosedLostOpportunity_Test"/>  
+      
+       <class name="com.mp06.test.MP_ServiceEnab_TC_01_Create_Remove_Relationship_Contact_BusinessAccount_Test"/>  
+         
+    
+      <class name="poc.mpdemo.test.SFDC_TC_02_ValidateOpportunitySearch_Test"/>
+      <class name="poc.mpdemo.test.SFDC_TC_01_ValidateCaseSearch_Test"/>
+      <class name="poc.mpdemo.test.SFDC_TC_03_ValidateOmniSupervisor_Test"/>    
+      
+     
+       
+         <class name="com.mp01.test.MP_ServiceEnab_TC_01_CreateBusinessAccount_Test"/>   
+          <class name="com.mp01.test.MP_ServiceEnab_TC_02_CreateServiceAccount_Test"/>
+        <class name="com.mp01.test.MP_ServiceEnab_TC_03_CreateBillingAccount_Test"/> 
+      	<class name="com.mp01.test.MP_ServiceEnab_TC_04_CreateContact_Test"/> 
+       <class name="com.mp01.test.MP_ServiceEnab_TC_05_EmailToCase_Test"/> 
+        
+       <class name="com.mp01.test.MP_SalesEnab_TC_01_CreateOpportunity_Test"/>      
+       <class name="com.mp01.test.MP_SalesEnab_TC_02_CreateQuote_OnNetServiceability_Test"/> 
+      	<class name="com.mp01.test.MP_SalesEnab_TC_04_CreateQuote_NewServiceAccount_Test"/>
+   
+      <class name="com.mp01.test.MP_CPQ_OM_TC_01_VerifyAccess_Accounts_Test"/>   
+         <class name="com.mp01.test.MP_CPQ_OM_TC_02_VerifyAccess_Contacts_Test"/>
+       <class name="com.mp01.test.MP_CPQ_OM_TC_03_VerifyAccess_Opportunities_Test"/>  
+     <class name="com.mp01.test.MP_CPQ_OM_TC_04_VerifyAccess_Quotes_Test"/>
+       <class name="com.mp01.test.MP_CPQ_OM_TC_05_VerifyAccess_Orders_Test"/>  
+       <class name="com.mp01.test.MP_CPQ_OM_TC_06_VerifyAccess_ManualQueues_Test"/>   
+       
+
+	
+    	  <class name="com.mp01.test.MP_CPQ_OM_TC_17_BillingAccountCreation_Test"/> 
+    
+       
+       <class name="com.mp03.test.MP_CPQ_OM_TC_01_VerifyTaskState_Ready_Running_Task1_Task2_Test"/> 
+     <class name="com.mp03.test.MP_CPQ_OM_TC_02_VerifyTaskState_Pending_Running_Task1_Task2_Test"/>  
+     
+    
+     
+          <class name="mp.regression.test.MP_Regression_TC_11_Validate_FailedOrchestrationTask1_Test"/>   
+     <class name="mp.regression.test.MP_Regression_TC_12_Validate_FailedOrchestrationTask2_Test"/> 
+     <class name="mp.regression.test.MP_Regression_TC_13_Validate_OrderCancellation_Test"/> --> 
+      
+  <!--    <class name="com.mp04.test.MP_ServiceEnab_TC_01_ChangeEmployeeSize_InBusinessAccount_Test"/>    
+     <class name="com.mp04.test.MP_ServiceEnab_TC_02_CreateChildBusinessAccount_Test"/>  
+     <class name="com.mp04.test.MP_ServiceEnab_TC_03_ChangeLegalNameBusinessAccount_Approve_Test"/>
+      <class name="com.mp04.test.MP_ServiceEnab_TC_04_ChangeLegalNameBusinessAccount_Reject_Test"/>  
+ 	 <class name="com.mp04.test.MP_ServiceEnab_TC_07_UserProactivelyCreatesNewCase_Test"/>   
+     <class name="com.mp04.test.MP_ServiceEnab_TC_08_CreateQuickText_InsertQuickTextInEmail_Test"/>   
+     
+      <class name="com.mp05.test.MP_SalesEnab_TC_01_VerifyR4B_B2B_Navigation_Test"/>  
+ 	<class name="com.mp05.test.MP_SalesEnab_TC_02_VerifyR4B_B2B_Navigation_ForProductSubProduct_OpportunityCreation_Test"/>
+    <class name="com.mp05.test.MP_ServiceEnab_TC_02_EnableCommunity_ValidateServiceGroup_TrobuleshootAccess_Test"/>   
+  
+    <class name="com.mp06.test.MP_ServiceEnab_TC_02_Link_DeLink_Account_MasterAccount_Test"/> 
+   
+       <class name="com.mp11.test.MP_Service_TC_02_Case_Status_Change_To_Resolved_Test"/>
+      <class name="com.mp11.test.MP_Service_TC_01_Validate_Knowledge_Menu_ArticleCreation_Details_WidgetInCase_Test"/>
+    
+      <class name="com.mp14.test.MP_Service_Case_In_Queue_Cannot_Be_Edited_Create_Case_For_CommunityUser_CaseStatus_Cannot_Be_Changed_To_New_Test"/> 
+   
+ 
+       <class name="com.regression_02.test.MP_SalesEnab_TC_01_Validate_AE_Home_Page_Tabs_Test"/>  
+       <class name="com.regression_02.test.MP_ServiceEnab_TC_01_Validation_Of_Guided_Case_Creation_Test"/>
+      	<class name="com.regression_02.test.MP_SalesEnab_TC_02_Validate_Subscription_Page_Test"/>  
+	  <class name="com.regression_02.test.MP_SalesEnab_TC_03_Validate_UploadFiles_Manage_Library_In_Files_Page_Test"/> 
+	   <class name="com.regression_02.test.MP_SalesEnab_TC_04_Log_An_Activity_Through_Opportunity_ServiceAccount_Contact"/> 
+	
+	   <class name="com.regression_02.test.MP_Communities_TC_01_VerifyMBH_ComBadge_Header_BusCases_ComTabs_Test"/> 
+     <class name="com.regression_02.test.MP_Communities_TC_02_VerifyMBH_QuickLinks_ToggleCom_Footer_Test"/>
+      <class name="com.regression_02.test.MP_Communities_TC_03_VerifyCaseAttachment_Upload_Delete_Test"/>
+      <class name="com.regression_02.test.MP_Communities_TC_04_VerifyOrderDetails_Test"/> 
+      <class name="com.regression_02.test.MP_Communities_TC_05_Validation_Of_Case_Layout_DynamicReasonList_BasedOn_Product_AccountNames_CaseComments_Test"/> 
+      
+      
+        <class name="com.regression_03.test.TC_05_Validate_Orchestration_Dahsboard_EditCAN_Test"/>
+        <class name="com.regression_03.test.TC_06_Validate_Multiple_Existing_ServicableLocations_Premises_Test"/>
+      <class name="com.regression_03.test.R4B_B2B_R4B_TC_01_Account_Contact_EmpSize_AccStatusUpdate_ValidationTest"/>
+      <class name="com.regression_03.test.R4B_B2B_R4B_TC_02_ContactUpdate_EmpSizeUpdate_ValidationTest"/> 
+      <class name="com.regression_03.test.TC_01_Validate_ACR_permissions_InContact_EndorsorAssessorDeciderCoachInfluencer_SigningAuth_InBusAcc_Test"/> 
+      <class name="com.regression_03.test.TC_02_ModifyRoles_Business_Service_Billing_Account_Validate_ACR_Test"/> 
+      <class name="com.regression_03.test.TC_03_Vaidate_DuplicateContact_InactiveToActiveContacts_CreateIndirectACR_Test"/> 
+      
+        
+   <class name="com.regression_03.test.TC_04_Validate_ReActivateContact_CreateACR_ModifyRoles_VerifyPremiseSerAddress"/> 
+    
+
+      <class name="com.regression_03.test.MP_Regression_OM_RDI_ManualQueue_OrderActivation_End_To_End_Test"/> 
+     <class name="com.regression_03.test.MP_Regression_QM_GBJ_E2E_INT_TV_CableProvisioningQueue_Test"/> -->
+
+   <!--   <class name="com.regression_03.test.MP_Regression_OM_RDI_ManualQueue_OrderActivation_End_To_End_Test"/> 
+     <class name="com.regression_03.test.MP_Regression_QM_GBJ_E2E_INT_TV_CableProvisioningQueue_Test"/>  -->
+
+      
+   <!--     <class name="com.mp09.test.MP_QuoteManagement_ValidateInstallationDiscount_Hybridcart_Test"/> 
+     <class name="com.mp09.test.MP_OrderManagement_GBJ_CreateQuoteByGBJ_Internet_TV_Test"/>  
+     <class name="com.mp09.test.MP_QuoteManagement_ValidateEPCChanges_HybridCart_Test"/>  
+
+     <class name="com.mp12.test.MP_GuidedByJourney_IBLC_Sanity_Test"/>   
+    <class name="com.regression_01.test.MP_Regression_QM_GBJ_E2E_INT_TV_Standalone_Bundled_Test"/> 
+    
+         <class name="scrum.qm.test.MP09_QM_TC_01_GBJ_CreateQuoteByGBJ_Internet_TV_Test"/>  -->
+   <!--  <class name="scrum.qm.test.MP12_QM_GuidedByJourney_IBLC_Sanity_Test"/>
+
+     <class name="com.mp12.test.MP_GuidedByJourney_IBLC_Sanity_Test"/>  
+   <class name="scrum.communities.test.MP_Communities_TC_06_Case_Creation_Service_Test"/>  --> 
+   <!--   <class name="com.regression_01.test.MP_Regression_QM_GBJ_E2E_INT_TV_Standalone_Bundled_Test"/>   
+       <class name="scrum.qm.test.MP09_QM_TC_01_GBJ_CreateQuoteByGBJ_Internet_TV_Test"/>  
+     <class name="scrum.qm.test.MP12_QM_GuidedByJourney_IBLC_Sanity_Test"/>
+
+     <class name="com.regression_01.test.MP_Regression_QM_GBJ_E2E_IBLC_Standalone_Bundled_Test"/> 
+
+       
+   <class name="mp.regression.test.MP_Regression_TC_01_OrderActivation_ExistingContact_ExistingSA_ExistingSiteContact_BusinessInternet_Monthly_ON_Test"/>
+      <class name="mp.regression.test.MP_Regression_TC_02_OrderActivation_NewContact_ExistingSA_NewSiteContact_BusinessInternetPro_36Months_ON_Test"/>
+     <class name="mp.regression.test.MP_Regression_TC_03_OrderActivation_ExistingContact_NewSA_NewSiteContact_BusinessInternetWifi_Monthly_ON_Test"/>
+    
+       <class name="mp.regression.test.MP_Regression_TC_04_OrderActivation_ExistingContact_ExistingSA_ExistingSiteContact_BusinessInternetWifiPro_36Months_ON_Test"/> 
+       <class name="mp.regression.test.MP_Regression_TC_05_OrderActivation_NewContact_ExistingSA_ExistingSiteContact_Ignite_Monthly_ON_Test"/>  
+       <class name="mp.regression.test.MP_Regression_TC_06_OrderActivation_ExistingContact_ExistingSA_ExistingSiteContact_BusinessInternet_Monthly_Atlantic_Test"/>   
+       <class name="mp.regression.test.MP_Regression_TC_07_OrderActivation_NewContact_NewSA_NewSiteContact_Ignite_36Months_Atlantic_Test"/>
+   	   <class name="mp.regression.test.MP_Regression_TC_08_OrderActivation_NewContact_ExistingSA_ExistingSiteContact_BusinessInternet_36Months_Atlantic_Test"/>   
+       <class name="mp.regression.test.MP_Regression_TC_09_OrderActivation_ExistingContact_NewSA_NewSiteContact_Ignite_Monthly_Atlantic_Test"/>  
+       
+   
+       <class name="mp.regression.test.MP_Regression_TC_14_VerifyAccess_AE_NoAccess_ManualQueues_Test"/>
+       <class name="mp.regression.test.MP_Regression_TC_15_VerifyAccess_SalesManager_NoAccess_ManualQueues_Test"/>  
+      <class name="mp.regression.test.MP_Regression_CPQOM_ContractCode_Validation_Test"/>-->
+      
+   <!--      <class name="mp.regression.test.MP_Regression_VerifyOrderActivation_ON_Test"/>
+	   <class name="mp.regression.test.MP_Regression_CPQOM_Quote_Pricing_Cost_Validation_Test"/> 
+	   <class name="com.mp05.test.MP_ServiceEnab_TC_01_VerifyWebToCaseRouting_Test"/> 
+       
+      <class name="poc.insprint.test.TC_1_Sprint_07_US_860__CONTACT_____Create_Primary_Contact_For_BA_Test"/>
+      <class name="poc.insprint.test.TC_2_Sprint_08_US_1362_CONTACT_____Create_Contact_Verify_First_Contact_PrimaryFlag_Readonly_Test"/> 
+      <class name="poc.insprint.test.TC_3_Sprint_08_US_528__CONTACT_____Create_Multiple_Contact_For_BA_Test"/>
+      <class name="poc.insprint.test.TC_4_Sprint_07_US_532__SERVICEACC__Create_Service_Account_Test"/> 
+      <class name="poc.insprint.test.TC_5_Sprint_08_US_533__SERVICEACC__Create_Multiple_Service_Account_Test"/>
+      <class name="poc.insprint.test.TC_6_Sprint_10_US_1099_SERVICEACC__Create_Service_Account_Verify_Premises_Test"/> -->
+      
+    </classes>
+	</test>
+  	
+ </suite>
+

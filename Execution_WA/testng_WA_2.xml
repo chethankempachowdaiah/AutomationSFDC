@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WACC SFDC Test Automation Suite">
+
+	<listeners>
+		<listener class-name="com.framework.base.MyListener" />
+	</listeners>
+
+	<test name="QA Wireless Accleration  Automation Pack">
+		<classes>
+			<!-- <class name="scrum.wa.test.WA_TC_01_OffMode_Validate_CreateQuotePBF_NotPresent_Test"/> 
+				<class name= "scrum.wa.test.WA_TC_02_CreateQuoteByPBF_VerifyProductDetails_Test"/> 
+				<class name="scrum.wa.test.WA_TC_03_Create_Accounts_TestData_Test"/> <class 
+				name="scrum.wa.test.WA_TC_04_AcceptQuoteBy_E_Signature_Test" /> <class name="scrum.wa.test.WA_TC_05_AcceptQuoteBy_Verbal_Test"/> 
+				<class name="scrum.wa.test.WA_TC_06_RetrieveSavedQuote_Test" /> <class name="scrum.wa.test.WA_TC_07_OrchestrationTasks_Test" 
+				/> <class name="scrum.wa.test.WA_TC_09_CreditDiscount_Device"/> <class name="scrum.wa.test.WA_TC_10_Device_Availaibility_Check"/> 
+				<class name= "scrum.wa.test.WA_TC_11_VerifyProgressiveDiscSectionsPricePlanFirst"/> 
+				<class name= "scrum.wa.test.WA_TC_13_VerifyAddonScreen_BYOD_ContinueToDevBtn"/> 
+				<class name= "scrum.wa.test.WA_TC_14_DevicesFilterAtribute_DevListings"/> 
+				<class name="com.Regression_WA.test.WA_TC_01_CreateQuote_VerifyPlansAndBYOD_Test" 
+				/> -->
+				<class name = "scrum.wa.test.WA_TC_38_ValidateE2EMVPQuoteAssets"/>
+
+			<!-- <class name="com.Regression_WA.test.WA_TC_02_CreateQuote_VerifyPlansAndDevices_Test" 
+				/> <class name="com.Regression_WA.WA_TC_03_CreateQuote_VerifyPlansAndDevicesWithDP_Acc_Test" 
+				/> <class name="com.Regression_WA.test.WA_TC_04_CreateQuote_VerifyDevicesFirstAndPlans_NoDP_No_Acc_Test" 
+				/> <class name="com.Regression_WA.test.WA_TC_05_CreateQuote_VerifyDeviceFirstAndPlansWithDP_Acc_Test" 
+				/> <class name="com.Regression_WA.test.WA_TC_06_CreateQuote_VerifyDevicesFirstAndPlans_WithDP_No_Acc_Test" 
+				/> <class name="scrum.wa.test.WA_TC_08_ShopWirelessDevices_Test" /> -->
+		</classes>
+	</test>
+</suite>

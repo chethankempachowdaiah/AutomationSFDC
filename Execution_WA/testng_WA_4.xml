@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WACC SFDC Test Automation Suite">
+
+	<listeners>
+		<listener class-name="com.framework.base.MyListener" />
+	</listeners>
+
+	<test name="QA Wireless Accleration  Automation Pack">
+		<classes>
+			<!-- <class name="scrum.wa.test.WA_TC_01_OffMode_Validate_CreateQuotePBF_NotPresent_Test"/>
+			 <class name= "scrum.wa.test.WA_TC_02_CreateQuoteByPBF_VerifyProductDetails_Test"/> 
+			<class name="scrum.wa.test.WA_TC_03_Create_Accounts_TestData_Test"/>
+			<class name="scrum.wa.test.WA_TC_04_AcceptQuoteBy_E_Signature_Test" /> 
+			<class name="scrum.wa.test.WA_TC_05_AcceptQuoteBy_Verbal_Test" /> 
+			<class name="scrum.wa.test.WA_TC_06_RetrieveSavedQuote_Test" />
+			<class name="scrum.wa.test.WA_TC_07_OrchestrationTasks_Test" />
+			<class name="scrum.wa.test.WA_TC_08_ShopWirelessDevices_Test" /> 
+			<class name="scrum.wa.test.WA_TC_09_CreditDiscount_Device" />  
+			<class name="scrum.wa.test.WA_TC_10_Device_Availaibility_Check" />  
+			<class name= "scrum.wa.test.WA_TC_11_VerifyProgressiveDiscSectionsPricePlanFirst"/> 
+			<class name= "scrum.wa.test.WA_TC_15_SummaryPage_FinancedDevice"/>
+			<class name= "scrum.wa.test.WA_TC_16_Verify_Quantity_AccessoriesDetailsPageTest">
+				<methods>
+					<include name = "validate_Accessory_Qty_Zero"/>
+					 <include name = "validate_Accessory_Qty_More_Than_100"/>
+					<include name = "validate_Accessory_Qty_between_1To100"/>
+				</methods>
+			</class>
+			<class name= "scrum.wa.test.WA_TC_17_Validate_CartBannerAfter_AddtoCartTest"/>
+			<class name= "scrum.wa.test.WA_TC_18_Validate_Filter_ShopForAceessoriesPageTest">
+				<methods>
+					<include name = "validate_Page_Filter"/>
+					<include name = "validate_ResetFilterOnFilterBubble"/>
+					<include name = "validate_CloseIconOnFilterBubble"/>
+					<include name = "validate_BrandName_DeviceName_ShopForAccessoriesPage"/>
+				</methods>
+			</class>
+			<class name= "scrum.wa.test.WA_TC_19_VerifyAddedAccessoriesOnShoppingCartPageTest">
+				<methods>
+					<include name = "Validate_pageNavigation_ShopAccessoriesPage"/>
+					<include name = "Validate_AccessoriesAdded_ViewOnShoppingCart"/> 	
+				</methods> 
+			</class>
+			<class name= "scrum.wa.test.WA_TC_20_VerifyValueOnShopForAccessoriesPageTest"/>
+			<class name ="scrum.wa.test.WA_TC_21_VerifyAccessoryDetailsPageTest"/>
+			<class name = "scrum.wa.test.WA_TC_23_Verify_DefaultValue_AccessoriesDetailsPageTest"/>
+			<class name = "scrum.wa.test.WA_TC_24_Verify_CloseFilterIcon_ShopForAccessoryPage_Test"/>
+			<class name = "scrum.wa.test.WA_TC_25_Verify_Add_Remove_Item_InShoppingCart_Test"/>
+			<class name = "scrum.wa.test.WA_TC_26_VerifyAddedItemInShoppingCartPageTest"/> 
+			<class name = "scrum.wa.test.WA_TC_27_VerifyChangeItemQuantityInShoppingCartPageTest"/>
+			<class name = "scrum.wa.test.WA_TC_28_VerifyRemoveItemsInShoppingCartPageTest"/>
+			<class name = "scrum.wa.test.WA_TC_29_VerifyFlatDiscountOnQuoteInCartTest"/>
+			<class name = "scrum.wa.test.WA_TC_30_VerifyStockAvailabilityOnAccessoriesDetailsPageTest"/>
+			<class name = "scrum.wa.test.WA_TC_31_VerifyFooterPriceAfterFlatDiscountAppliedTest"/>
+       		<class name="scrum.wa.test.WA_TC_35_WirelessMarginCalculationsForDevices">
+        		<methods>
+        			<exclude name="validate_FooterPricesPayFullDevice"/>
+        			<exclude name="validate_FooterPriceswithFinance"/>
+        			<include name="validate_FooterPriceFirstDeviceandPlan"/>
+      			</methods>
+      		</class>
+       		<class name="scrum.wa.test.WA_TC_37_WirelessMarginCalculationsForDPandApplecare">
+        		<methods>
+        			<exclude name="validate_FooterPriceswithAppleCare"/>
+        			<exclude name="validate_FooterPriceswithDeviceProtection"/>
+        			<exclude name="validate_FooterPriceswithAppleCareFirstDevice"/>
+        			<include name="validate_FooterPriceswithDeviceProtectionFirstDevice"/>
+      			</methods>
+       		</class>
+       		 <class name = "scrum.wa.test.WA_TC_36_WirelessMarginCalForAccessories"/>
+       		 <class name = "scrum.wa.test.WA_TC_44_validate_DP_addtocart_or_SkipDP"/>-->
+       		 <!-- <class name = "scrum.wa.test.WA_TC_43_Accessories_sidebarFilter">
+       		 	<methods>
+        			<include name="validate_AcceSidebarFilters"/>
+      			</methods>
+       		 </class> -->
+       		<!-- <class name = "scrum.wa.test.WA_TC_48_validateWirelessPlansTile">
+       		 	<methods>
+        			<include name="validate_WirelessPlansTileandtextfromCart"/>
+      			</methods>
+       		 </class>
+       		 <class name = "scrum.wa.test.WA_TC_50_ValidateAcceSpecialOffers"/>
+       		 <class name = "scrum.wa.test.WA_TC_54_ValidateAcceListingsQuickFiltersAndDefaultState"/> 
+       		 <class name = "scrum.wa.test.WA_TC_65_AditionalFieldValidationOnCIFAccntNumTab"/>
+       		 <class name = "scrum.wa.test.WA_TC_66_RestrictionOnPortInFromRogersNumber_Test">
+       		 	<methods>
+        			<include name="validate_RogersPortInNumbersLandline"/>
+      			</methods>
+      		 </class>
+      		 <class name = "scrum.wa.test.WA_TC_67_OrderPDFscenarios_Test"/>-->
+      		 <!-- <class name = "scrum.wa.test.WA_TC_69_CIFuserNameFieldSplitIntoFirstAndLastName_Test"/>-->
+      		 <!-- <class name = "scrum.wa.test.WA_TC_73_ViewingAndValidating3YearPricingFlow_Test"/> -->
+      		 <!-- <class name = "scrum.wa.test.WAC_TC_74_WACC6177"/> -->
+      		 
+      		 
+      		  <!-- <class name = "scrum.macd.test.MACD_TC_07_WACC3688_SelectDateOfAddOnRemoval_Test"/> --> 
+      		 <!--<class name = "scrum.macd.test.MACD_TC_08_WACC5493_PromotionsForAddOns_Test"/>
+      		 <class name = "scrum.macd.test.MACD_TC_09_WACC1790_ReviewExistingPricePlanForCTNselected_Test"/>-->
+      		 <class name = "scrum.macd.test.MACD_TC_11_WACC5092_5093_3846_PPC_ADDNewPlans_Test"/>
+      		 <!-- <class name = "scrum.macd.test.MACD_TC_16_WACC5215_3881_PPCconflictDiscountAndReviewFinalChanges_Test">
+      		 	<methods>
+        			<include name="ChooseNewVoiceAndDataPlanConflictDiscountsAndReviewFinalChanges"/>
+      			</methods>
+      		 </class> -->    	
+      		<!--  <class name = "scrum.macd.test.MACD_TC_16_WACC5215_3881_PPCconflictDiscountAndReviewFinalChanges_Test"/> -->
+      		 <!-- <class name = "scrum.macd.test.MACD_TC_20_WACC_4810_TNC_ExpandAndCollapseTheSection_Test"/>	 -->
+      		 <!-- <class name = "scrum.macd.test.MACD_TC_23_WACC4474_AddDP_IneligibleDueToNACBusinessRules_Test">
+      		 	<methods>
+        			<include name="validate_AddDP_AvailableWithin60days"/>
+      			</methods>
+      		</class> -->
+      		<!-- <class name = "scrum.macd.test.MACD_TC_24_WACC4477_DP_ReviewCTN_Changes_Test"/> -->
+    	</classes>
+	</test>
+</suite>

@@ -1,0 +1,415 @@
+package com.sfdc.lib_pages;
+
+import sfdc.page_objects.om.SFDC_GuidedByJourney_RDI_Page;
+import sfdc.pages.communities.Communities_CompleteOrderFlow_Page;
+import sfdc.pages.communities.Communities_ContactUs_Page;
+import sfdc.pages.communities.Communities_Home_Page;
+import sfdc.pages.communities.Communities_Login_Page;
+import sfdc.pages.communities.Communities_MyBusinessCaseDetails_Page;
+import sfdc.pages.communities.Communities_MyBusinessCases_Page;
+import sfdc.pages.communities.Communities_MyBusinessOrderDetails_Page;
+import sfdc.pages.communities.Communities_PBF_AddNewSite_Page;
+import sfdc.pages.communities.Communities_PBF_CablePlanSelection_Page;
+import sfdc.pages.communities.Communities_PBF_OrderConfirmation_Page;
+import sfdc.pages.communities.Communities_PBF_OrderReview_Page;
+import sfdc.pages.communities.Communities_PBF_Page;
+import sfdc.pages.communities.Communities_PBF_ShoppingCart_Page;
+import sfdc.pages.communities.Communities_ReviewSpecSheet_Page;
+import sfdc.pages.macd.MACD_AccountManagement_Page;
+import sfdc.pages.macd.MACD_BlockService_Page;
+import sfdc.pages.macd.MACD_ChangeWirelessPlans_Page;
+import sfdc.pages.macd.MACD_RemoveAddOn_Page;
+import sfdc.pages.macd.MACD_ReviewPlaceOrder_Page;
+import sfdc.pages.macd.MACD_ReviewSummaryScreen_Page;
+import sfdc.pages.macd.MACD_ReviewWirelessLine_Page;
+import sfdc.pages.macd.MACD_SelectAddOn_Page;
+import sfdc.pages.macd.MACD_TelephNumberChange_Page;
+import sfdc.pages.om.SFDC_CableOrderDetaiTaskItems_Page;
+import sfdc.pages.om.SFDC_CompleteVlocityOrder_Page;
+import sfdc.pages.om.SFDC_CreateSuperSystemOrder_Page;
+import sfdc.pages.om.SFDC_ManualQueueDetails_Page;
+import sfdc.pages.om.SFDC_ManualQueues_Page;
+import sfdc.pages.om.SFDC_OrchestrationItem_Page;
+import sfdc.pages.om.SFDC_OrchestrationPlan_Page;
+import sfdc.pages.om.SFDC_OrderDecomposition_Page;
+import sfdc.pages.om.SFDC_OrderDetails_Page;
+import sfdc.pages.om.SFDC_OrderFailure_Page;
+import sfdc.pages.om.SFDC_OrderRelated_Page;
+import sfdc.pages.om.SFDC_OrderWithPendingTask_Page;
+import sfdc.pages.om.SFDC_Orders_Page;
+import sfdc.pages.om.SFDC_ReviewOrderDetailsComplete_Page;
+import sfdc.pages.partnercommunities.PartnerCommunities_AccountDetails_Page;
+import sfdc.pages.partnercommunities.PartnerCommunities_Home_Page;
+import sfdc.pages.partnercommunities.PartnerCommunities_Login_Page;
+import sfdc.pages.partnercommunities.PartnerCommunities_OpportunityDetails_Page;
+import sfdc.pages.qm.SFDC_CPQHome_Page;
+import sfdc.pages.qm.SFDC_CPQ_QuoteRecord_Page;
+import sfdc.pages.qm.SFDC_CreateQuote_Page;
+import sfdc.pages.qm.SFDC_GuidedByJourney_IBLC_Page;
+import sfdc.pages.qm.SFDC_GuidedByJourney_IBLC_Provisioning_Details_Page;
+import sfdc.pages.qm.SFDC_GuidedByJourney_Internet_TV_Page;
+import sfdc.pages.qm.SFDC_HybridCart_IBLC_Page;
+import sfdc.pages.qm.SFDC_PBF_CablePlan_Selection_Page;
+import sfdc.pages.qm.SFDC_PBF_MultiSiteSelection_Page;
+import sfdc.pages.qm.SFDC_PBF_MultiSite_OrderReview_Page;
+import sfdc.pages.qm.SFDC_PBF_MultiSite_ShoppingCart_Page;
+import sfdc.pages.qm.SFDC_PBF_Off365AddOn_Selection_Page;
+import sfdc.pages.qm.SFDC_PBF_OrderConfirmation_Page;
+import sfdc.pages.qm.SFDC_PBF_OrderReview_Page;
+import sfdc.pages.qm.SFDC_PBF_SelectSiteContact_Page;
+import sfdc.pages.qm.SFDC_PBF_ShoppingCart_Page;
+import sfdc.pages.qm.SFDC_PBF_SiteSelection_Page;
+import sfdc.pages.qm.SFDC_PBF_TVPlanSelection_Page;
+import sfdc.pages.qm.SFDC_PBF_TV_AddOns_Selection_Page;
+import sfdc.pages.qm.SFDC_QuoteDetails_Page;
+import sfdc.pages.qm.SFDC_QuoteRelated_Page;
+import sfdc.pages.qm.SFDC_QuoteReview_Page;
+import sfdc.pages.qm.SFDC_Quote_GenerateDocument_Page;
+import sfdc.pages.qm.SFDC_Quote_SelectSiteContact_Page;
+import sfdc.pages.qm.SFDC_Quotes_Page;
+import sfdc.pages.sales.SFDC_Campaigns_Page;
+import sfdc.pages.sales.SFDC_CreateOpportunity_Page;
+import sfdc.pages.sales.SFDC_GuidedSellingByRingDNA_Page;
+import sfdc.pages.sales.SFDC_Lead_Page;
+import sfdc.pages.sales.SFDC_Opportunities_Page;
+import sfdc.pages.sales.SFDC_OpportunityCloseInfo_Page;
+import sfdc.pages.sales.SFDC_OpportunityDetails_Page;
+import sfdc.pages.sales.SFDC_OpportunityRelated_Page;
+import sfdc.pages.sales.SFDC_R4B_Quote_Approval_Page_Layout_Page ;
+import sfdc.pages.sales.SFDC_Setup_Page;
+import sfdc.pages.sales.SFDC_SiteSelection_Page;
+import sfdc.pages.sales.SFDC_Task_Creation_Page;
+import sfdc.pages.sales.SFDC_Task_Details_Page;
+import sfdc.pages.sales.SFDC_Task_Related_Page;
+import sfdc.pages.sales.SFDC_b2bAccount_Page;
+import sfdc.pages.sales.SFDC_b2bContact_Page;
+import sfdc.pages.service.Email_Mailinator_Page;
+import sfdc.pages.service.SFDC_AccountDetails_Page;
+import sfdc.pages.service.SFDC_AccountHierarchy_Page;
+import sfdc.pages.service.SFDC_AccountRelated_Page;
+import sfdc.pages.service.SFDC_Accounts_LinkMasterAccount_Page;
+import sfdc.pages.service.SFDC_Accounts_Page;
+import sfdc.pages.service.SFDC_CaseDetails_Page;
+import sfdc.pages.service.SFDC_CaseKnowledge_Page;
+import sfdc.pages.service.SFDC_CaseRelated_Page;
+import sfdc.pages.service.SFDC_Cases_Page;
+import sfdc.pages.service.SFDC_ChangeLegalName_Page;
+import sfdc.pages.service.SFDC_ContactDetails_Page;
+import sfdc.pages.service.SFDC_Contacts_Page;
+import sfdc.pages.service.SFDC_CreateBillingAccount_Page;
+import sfdc.pages.service.SFDC_CreateBusinessAccount_Page;
+import sfdc.pages.service.SFDC_CreateContact_Page;
+import sfdc.pages.service.SFDC_CreateServiceAccount_Page;
+import sfdc.pages.service.SFDC_Customer_Case_Page;
+import sfdc.pages.service.SFDC_EmailToCase_OmniChannel_Page;
+import sfdc.pages.service.SFDC_EnableCommunityUser_Page;
+import sfdc.pages.service.SFDC_Knowledge_Details_Page;
+import sfdc.pages.service.SFDC_Knowledge_Page;
+import sfdc.pages.service.SFDC_OmniSupervisor_Page;
+import sfdc.pages.service.SFDC_PartyRelationships_Page;
+import sfdc.pages.service.SFDC_QuickText_Page;
+import sfdc.pages.service.SFDC_ReviewChangeInEmployeeSize_Page;
+import sfdc.pages.service.SFDC_ServiceAccountPremisesDetails_Page;
+import sfdc.pages.service.SFDC_ServiceAccountRelated_Page;
+import sfdc.pages.service.SFDC_SnowPortal_Case_Page;
+import sfdc.pages.service.SFDC_Subscriptions_Page;
+import sfdc.pages.wireless.WACC_AccessoriesDetails_Page;
+import sfdc.pages.wireless.WACC_BrowseAccessories_Page;
+import sfdc.pages.wireless.WACC_GenerateDocument_ESign_Page;
+import sfdc.pages.wireless.WACC_OrchestrationPlan_Page;
+import sfdc.pages.wireless.WACC_ReviewOrder_Page;
+import sfdc.pages.wireless.WACC_SelectAddOns_Page;
+import sfdc.pages.wireless.WACC_SelectWirelessProducts_Page;
+import sfdc.pages.wireless.WACC_ShopWirelessDevices_Page;
+import sfdc.pages.wireless.WACC_ShoppingCart_Page;
+/**
+ * @author Priyanka.Acharya, Date= 26/Sept/2019 ..
+ *
+ *         This Class represents all the pages of the SFDC application,
+ *         Basically all the page object classess are initialized here. The same
+ *         reference can be used across all the test methods
+ */
+
+public class SFDC_AllPages {
+
+	public SFDC_Login_Page login;
+	public SFDC_Home_Page home;
+	public SFDC_Opportunities_Page opp;
+	public SFDC_Accounts_Page acc;
+	public SFDC_Contacts_Page contacts;
+	public SFDC_Quotes_Page quotes;
+	public SFDC_Orders_Page orders;
+	public SFDC_ManualQueues_Page mques;
+	public SFDC_OmniSupervisor_Page omni;
+	public SFDC_CreateBusinessAccount_Page cba;
+	public SFDC_CreateContact_Page cc;
+	public SFDC_CreateServiceAccount_Page csa;
+	public SFDC_CreateBillingAccount_Page cbia;
+	public SFDC_AccountDetails_Page accDetails;
+	public SFDC_AccountRelated_Page accRelated;
+	public SFDC_ServiceAccountRelated_Page saccRelated;
+	public SFDC_ReviewChangeInEmployeeSize_Page revwChangeEmplSize;
+	public SFDC_ChangeLegalName_Page chngLegalName;
+	public SFDC_ContactDetails_Page conDetails;
+	public SFDC_CreateOpportunity_Page cOpp;
+	public SFDC_CreateQuote_Page cQuote;
+	public SFDC_OpportunityDetails_Page oppDetails;
+	public SFDC_OpportunityRelated_Page oppRelated;
+	public SFDC_OpportunityCloseInfo_Page oppClosedInfo;
+	public SFDC_CPQHome_Page cpqHome;
+	public SFDC_HybridCart_IBLC_Page iblcHybridCart;
+	public SFDC_CPQ_QuoteRecord_Page cpqQuoteRec;
+	public SFDC_ServiceAccountPremisesDetails_Page premises;
+	public SFDC_Quote_GenerateDocument_Page gdPdf;
+	public SFDC_QuoteReview_Page quoteReview;
+	public SFDC_Quote_SelectSiteContact_Page siteCon;
+	public SFDC_QuoteRelated_Page quoteRelated;
+	public SFDC_QuoteDetails_Page quoteDetails;
+	public SFDC_OrderDetails_Page orderDetails;
+	public SFDC_OrderRelated_Page orderRelated;
+	public SFDC_OrderDecomposition_Page orderDecomPose;
+	public SFDC_OrderFailure_Page orderFailure;
+	public SFDC_OrchestrationPlan_Page orchPlan;
+	public SFDC_ManualQueueDetails_Page manQue;
+	public SFDC_CreateSuperSystemOrder_Page crSSOrd;
+	public SFDC_OrchestrationItem_Page orchItem;
+	public SFDC_OrderWithPendingTask_Page pendingTask;
+	public SFDC_CompleteVlocityOrder_Page complVlctyOdr;
+	public SFDC_EmailToCase_OmniChannel_Page omniChannel;
+	public SFDC_CaseDetails_Page caseDetails;
+	public SFDC_CaseRelated_Page caseRelated;
+	public SFDC_Cases_Page cases;
+	public SFDC_QuickText_Page quickText;
+	public SFDC_Accounts_LinkMasterAccount_Page linkMasterAcc;
+	public SFDC_AccountHierarchy_Page accHirchy;
+	public SFDC_PartyRelationships_Page partyRelationships;
+	public SFDC_GuidedByJourney_Internet_TV_Page gbjCart;
+	public SFDC_GuidedByJourney_IBLC_Page gbjIBLC;
+	public SFDC_GuidedByJourney_IBLC_Provisioning_Details_Page gbjProv;
+	public SFDC_EnableCommunityUser_Page enableComUser;
+	public SFDC_Subscriptions_Page subscription;
+	public SFDC_Files_Page files;
+	public SFDC_Customer_Case_Page customerCase;
+	public SFDC_ReviewOrderDetailsComplete_Page rODComplete;
+	public SFDC_CableOrderDetaiTaskItems_Page cableTaskItems;
+	public SFDC_GuidedByJourney_RDI_Page gbjRDI;
+	public SFDC_GuidedSellingByRingDNA_Page gsringDNA;
+	public SFDC_Campaigns_Page campaignPage;
+	public SFDC_Setup_Page setupPage;
+	
+	public SFDC_Task_Creation_Page task;
+	public SFDC_Task_Details_Page taskDetails;
+	public SFDC_Knowledge_Page knowledge;
+	public SFDC_Knowledge_Details_Page knowledgeDetails;
+	public SFDC_CaseKnowledge_Page caseKnowledge;
+	public Email_Mailinator_Page mailinatorPage;
+
+	public Communities_Login_Page comLogin;
+	public Communities_ContactUs_Page comContactUs;
+	public Communities_Home_Page comHome;
+	public Communities_MyBusinessCases_Page comMyBusCases;
+	public Communities_MyBusinessCaseDetails_Page comCaseDetails;
+	public Communities_MyBusinessOrderDetails_Page comOrderDetails;
+	public Communities_ReviewSpecSheet_Page comReviewSpecSheet;
+	public SFDC_SiteSelection_Page siteSel;
+	
+	public SFDC_b2bAccount_Page b2bAccount;
+	public SFDC_b2bContact_Page b2bContacts;
+	public Communities_PBF_Page commPBF;
+	public Communities_PBF_ShoppingCart_Page commPBFShopCart;
+	public Communities_PBF_CablePlanSelection_Page commPBFCablePlan;
+	public Communities_PBF_OrderReview_Page commPBFOrderReview;
+	public Communities_PBF_OrderConfirmation_Page commPBFOrderConf;
+	public Communities_PBF_AddNewSite_Page commPBFAddSite;
+	public SFDC_PBF_TVPlanSelection_Page commPBFTVPlan;
+	public SFDC_PBF_TV_AddOns_Selection_Page commPBFTVAddons;
+
+	public SFDC_PBF_SiteSelection_Page siteSelPBF;
+	public SFDC_PBF_CablePlan_Selection_Page planSelPBF;
+	public SFDC_PBF_OrderReview_Page orRevPBF;
+	public SFDC_PBF_ShoppingCart_Page shopCartPBF;
+	public SFDC_PBF_OrderConfirmation_Page orConfPBF;
+	public SFDC_PBF_SelectSiteContact_Page siteConPBF;
+	public SFDC_PBF_Off365AddOn_Selection_Page off365AddOnPBF;
+
+	public SFDC_PBF_MultiSiteSelection_Page mulSiteSelPBF;
+	public SFDC_PBF_MultiSite_ShoppingCart_Page mulPBFShopCart;
+	public SFDC_PBF_MultiSite_OrderReview_Page mulSiteOrderReview;
+
+	public SFDC_UserProfile_Page userProfile;
+	public SFDC_Task_Related_Page taskRelated;
+	public SFDC_Lead_Page lead;
+
+	public PartnerCommunities_Login_Page partnerCommLogin;
+	public PartnerCommunities_Home_Page partnerCommHome;
+	public PartnerCommunities_AccountDetails_Page partnerCommAccDetails;
+	public PartnerCommunities_OpportunityDetails_Page partnerCommOppDetails;
+
+	public SFDC_SnowPortal_Case_Page snowPortalCase;
+
+	public WACC_SelectWirelessProducts_Page selectPro;
+	public WACC_SelectAddOns_Page selectAddOn;
+	public WACC_ShoppingCart_Page shopCart;
+	public WACC_ReviewOrder_Page reOrder;
+	public SFDC_R4B_Quote_Approval_Page_Layout_Page r4Bquoteapp;
+	public WACC_GenerateDocument_ESign_Page genDoc;
+	
+	public Communities_CompleteOrderFlow_Page comOrdFlow;
+	
+	public WACC_ShopWirelessDevices_Page shopWADevcs;
+	public WACC_BrowseAccessories_Page bAccessories;
+	public WACC_AccessoriesDetails_Page accessoryDetails;
+	public MACD_AccountManagement_Page accManagement;
+	public MACD_ReviewWirelessLine_Page reviewWALine;
+	public MACD_SelectAddOn_Page macdSelAddon;
+	public MACD_RemoveAddOn_Page macdRemoveAddOn;
+	public MACD_ReviewPlaceOrder_Page macdReviewPlaceOrder;
+	public WACC_OrchestrationPlan_Page waccOrchestration;
+	public MACD_ChangeWirelessPlans_Page macdChangeWirelessPlans;
+    public MACD_BlockService_Page macdblkservice;
+    public MACD_ReviewSummaryScreen_Page macdReviewSumScreen;
+    public MACD_TelephNumberChange_Page macdTelephNumChange;
+
+	public SFDC_AllPages() {
+
+		login = new SFDC_Login_Page();
+		home = new SFDC_Home_Page();
+		opp = new SFDC_Opportunities_Page();
+		acc = new SFDC_Accounts_Page();
+		contacts = new SFDC_Contacts_Page();
+		quotes = new SFDC_Quotes_Page();
+		orders = new SFDC_Orders_Page();
+		mques = new SFDC_ManualQueues_Page();
+		omni = new SFDC_OmniSupervisor_Page();
+		cba = new SFDC_CreateBusinessAccount_Page();
+		cc = new SFDC_CreateContact_Page();
+		csa = new SFDC_CreateServiceAccount_Page();
+		cbia = new SFDC_CreateBillingAccount_Page();
+		accDetails = new SFDC_AccountDetails_Page();
+		accRelated = new SFDC_AccountRelated_Page();
+		saccRelated = new SFDC_ServiceAccountRelated_Page();
+		revwChangeEmplSize = new SFDC_ReviewChangeInEmployeeSize_Page();
+		chngLegalName = new SFDC_ChangeLegalName_Page();
+		conDetails = new SFDC_ContactDetails_Page();
+		cOpp = new SFDC_CreateOpportunity_Page();
+		cQuote = new SFDC_CreateQuote_Page();
+		oppDetails = new SFDC_OpportunityDetails_Page();
+		oppRelated = new SFDC_OpportunityRelated_Page();
+		oppClosedInfo = new SFDC_OpportunityCloseInfo_Page();
+		cpqHome = new SFDC_CPQHome_Page();
+		iblcHybridCart = new SFDC_HybridCart_IBLC_Page();
+		cpqQuoteRec = new SFDC_CPQ_QuoteRecord_Page();
+		premises = new SFDC_ServiceAccountPremisesDetails_Page();
+		gdPdf = new SFDC_Quote_GenerateDocument_Page();
+		quoteReview = new SFDC_QuoteReview_Page();
+		siteCon = new SFDC_Quote_SelectSiteContact_Page();
+		quoteRelated = new SFDC_QuoteRelated_Page();
+		quoteDetails = new SFDC_QuoteDetails_Page();
+		orderDetails = new SFDC_OrderDetails_Page();
+		orderRelated = new SFDC_OrderRelated_Page();
+		orderDecomPose = new SFDC_OrderDecomposition_Page();
+		orderFailure = new SFDC_OrderFailure_Page();
+		orchPlan = new SFDC_OrchestrationPlan_Page();
+		manQue = new SFDC_ManualQueueDetails_Page();
+		crSSOrd = new SFDC_CreateSuperSystemOrder_Page();
+		orchItem = new SFDC_OrchestrationItem_Page();
+		pendingTask = new SFDC_OrderWithPendingTask_Page();
+		complVlctyOdr = new SFDC_CompleteVlocityOrder_Page();
+		omniChannel = new SFDC_EmailToCase_OmniChannel_Page();
+		caseDetails = new SFDC_CaseDetails_Page();
+		caseRelated = new SFDC_CaseRelated_Page();
+		cases = new SFDC_Cases_Page();
+		quickText = new SFDC_QuickText_Page();
+		linkMasterAcc = new SFDC_Accounts_LinkMasterAccount_Page();
+		accHirchy = new SFDC_AccountHierarchy_Page();
+		partyRelationships = new SFDC_PartyRelationships_Page();
+		gbjCart = new SFDC_GuidedByJourney_Internet_TV_Page();
+		gbjIBLC = new SFDC_GuidedByJourney_IBLC_Page();
+		gbjProv = new SFDC_GuidedByJourney_IBLC_Provisioning_Details_Page();
+		enableComUser = new SFDC_EnableCommunityUser_Page();
+		subscription = new SFDC_Subscriptions_Page();
+		files = new SFDC_Files_Page();
+		customerCase = new SFDC_Customer_Case_Page();
+		rODComplete = new SFDC_ReviewOrderDetailsComplete_Page();
+		cableTaskItems = new SFDC_CableOrderDetaiTaskItems_Page();
+		gbjRDI = new SFDC_GuidedByJourney_RDI_Page();
+		gsringDNA = new SFDC_GuidedSellingByRingDNA_Page();
+		campaignPage = new SFDC_Campaigns_Page();
+		setupPage = new SFDC_Setup_Page();
+
+		task = new SFDC_Task_Creation_Page();
+		taskDetails = new SFDC_Task_Details_Page();
+
+		knowledge = new SFDC_Knowledge_Page();
+		knowledgeDetails = new SFDC_Knowledge_Details_Page();
+		caseKnowledge = new SFDC_CaseKnowledge_Page();
+
+		mailinatorPage = new Email_Mailinator_Page();
+
+		comLogin = new Communities_Login_Page();
+		comContactUs = new Communities_ContactUs_Page();
+		comHome = new Communities_Home_Page();
+		comMyBusCases = new Communities_MyBusinessCases_Page();
+		comCaseDetails = new Communities_MyBusinessCaseDetails_Page();
+		comOrderDetails = new Communities_MyBusinessOrderDetails_Page();
+		comReviewSpecSheet = new Communities_ReviewSpecSheet_Page();
+		siteSel = new SFDC_SiteSelection_Page();
+
+		b2bAccount = new SFDC_b2bAccount_Page();
+		b2bContacts = new SFDC_b2bContact_Page();
+
+		commPBF = new Communities_PBF_Page();
+		commPBFShopCart = new Communities_PBF_ShoppingCart_Page();
+		commPBFCablePlan = new Communities_PBF_CablePlanSelection_Page();
+		commPBFTVPlan = new SFDC_PBF_TVPlanSelection_Page();
+		commPBFTVAddons = new SFDC_PBF_TV_AddOns_Selection_Page();
+		commPBFOrderReview = new Communities_PBF_OrderReview_Page();
+		commPBFOrderConf = new Communities_PBF_OrderConfirmation_Page();
+		userProfile = new SFDC_UserProfile_Page();
+		commPBFAddSite = new Communities_PBF_AddNewSite_Page();
+		taskRelated = new SFDC_Task_Related_Page();
+		lead = new SFDC_Lead_Page();
+		
+		siteSelPBF = new SFDC_PBF_SiteSelection_Page();
+		planSelPBF = new SFDC_PBF_CablePlan_Selection_Page();
+		orRevPBF = new SFDC_PBF_OrderReview_Page();
+		shopCartPBF = new SFDC_PBF_ShoppingCart_Page();
+		orConfPBF = new SFDC_PBF_OrderConfirmation_Page();
+		siteConPBF = new SFDC_PBF_SelectSiteContact_Page();
+		off365AddOnPBF = new SFDC_PBF_Off365AddOn_Selection_Page();
+		
+		mulSiteSelPBF = new SFDC_PBF_MultiSiteSelection_Page();
+		mulPBFShopCart = new SFDC_PBF_MultiSite_ShoppingCart_Page();
+		mulSiteOrderReview = new SFDC_PBF_MultiSite_OrderReview_Page();
+		
+		partnerCommLogin = new PartnerCommunities_Login_Page();
+		partnerCommHome = new PartnerCommunities_Home_Page();
+		partnerCommAccDetails = new PartnerCommunities_AccountDetails_Page();
+		partnerCommOppDetails = new PartnerCommunities_OpportunityDetails_Page();
+
+		snowPortalCase = new SFDC_SnowPortal_Case_Page();
+		selectPro = new WACC_SelectWirelessProducts_Page();
+		selectAddOn = new WACC_SelectAddOns_Page();
+		shopCart = new WACC_ShoppingCart_Page();
+		reOrder = new WACC_ReviewOrder_Page();
+		r4Bquoteapp = new SFDC_R4B_Quote_Approval_Page_Layout_Page();
+		genDoc = new WACC_GenerateDocument_ESign_Page();
+		
+		comOrdFlow = new Communities_CompleteOrderFlow_Page();
+		
+		shopWADevcs = new WACC_ShopWirelessDevices_Page();
+		bAccessories =new WACC_BrowseAccessories_Page();
+		accessoryDetails = new WACC_AccessoriesDetails_Page();
+		accManagement =new MACD_AccountManagement_Page() ;
+		reviewWALine =new MACD_ReviewWirelessLine_Page();
+		macdSelAddon = new MACD_SelectAddOn_Page();
+		macdRemoveAddOn = new MACD_RemoveAddOn_Page();
+		macdReviewPlaceOrder = new MACD_ReviewPlaceOrder_Page(); 
+		waccOrchestration = new WACC_OrchestrationPlan_Page();
+		macdChangeWirelessPlans = new MACD_ChangeWirelessPlans_Page();
+		macdblkservice = new MACD_BlockService_Page();
+		macdReviewSumScreen = new MACD_ReviewSummaryScreen_Page();
+		macdTelephNumChange = new MACD_TelephNumberChange_Page();
+	}
+
+}

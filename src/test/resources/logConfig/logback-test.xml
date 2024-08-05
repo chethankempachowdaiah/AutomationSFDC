@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>
+				%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n
+			</Pattern>
+		</layout>
+	</appender>
+
+<property name="USER_HOME" value="./reports_and_logs/" />
+
+	<appender name="FILE" class="ch.qos.logback.core.FileAppender" >
+		<file>${USER_HOME}/tests.log </file>
+		<append>false</append>
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<appender name="htmlAppender" class="ch.qos.logback.core.FileAppender">
+	    <param name="Append" value="false" />
+		<file>${USER_HOME}/log.html</file>
+    		<encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+        		<layout class="ch.qos.logback.classic.html.HTMLLayout">
+            		<pattern>%d{yyyy-MM-dd HH:mm:ss}%level%method%msg</pattern>
+        		</layout>
+    		</encoder>
+	</appender>
+
+	<logger name="rollingFileLogger" level="info" additivity="false">
+		<appender-ref ref="FILE" />
+	</logger>
+
+	<root level="error">
+		<appender-ref ref="FILE" />
+	</root>
+	
+	<logger name="rollingFileLogger" level="info" additivity="false">
+	<appender-ref ref="htmlAppender" />
+	</logger>
+
+	<root level="info">
+		<appender-ref ref="htmlAppender" />
+	</root>
+
+	<logger name="rollingFileLogger" level="info" additivity="false">
+		<appender-ref ref="STDOUT" />
+	</logger>
+
+	<root level="info">
+		<appender-ref ref="STDOUT" />
+	</root>
+
+</configuration>

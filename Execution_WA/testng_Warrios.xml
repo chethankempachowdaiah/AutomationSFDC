@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WACC SFDC Test Automation Suite">
+
+	<listeners>
+		<listener class-name="com.framework.base.MyListener" />
+	</listeners>
+
+	<test name="QA Wireless Accleration  Worrios Team Automation Pack">
+		<classes>
+		
+	<!--  		 <class name= "scrum.macd.test.MACD_TC_06_WACC5106_ConfirmationofDocusignEmailSenTest"/> 
+			  <class name= "scrum.macd.test.MACD_TC_06_WACC5106_ConfirmationofDocusignEmailSenTest"/> 
+			   <class name= "scrum.macd.test.MACD_TC_08_WACC5011_DP_Review_CTN_Details_Page_Test"/> 
+		    <class name= "scrum.macd.test.MACD_TC_09_WACC5433_Voicemail_Add_On_Radio_Button_Enhancement_Test"/> 
+			  <class name= "scrum.wa.test.WA_TC_71_OM_Validate_OrchestrationTasks_Test"/> -->
+			  
+		<!--  	   <class name= "scrum.macd.test.MACD_TC_14A_WACC4493_Verify_AddDP_In_OrderReviewPage_Test"/> 
+			   <class name= "scrum.macd.test.MACD_TC_14B_WACC4493_Verify_RemoveDP_In_OrderReviewPage_Test"/> -->
+			 <class name= "scrum.macd.test.MACD_TC_17_WACC5944_ReplaceDeviceProtectionWithAppleCareTest"/> 
+
+		</classes>
+	</test>
+</suite>

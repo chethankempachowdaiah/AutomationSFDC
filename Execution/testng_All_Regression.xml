@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Mission Possible SFDC Test Automation Suite">
+
+    <listeners>
+        <listener class-name="com.framework.base.MyListener" />
+         <!--<listener class-name="com.framework.base.AnnotationTransformer"/>  -->
+    </listeners>
+    
+    <test  name="QA Mission Possible Sanity and Regression Automation Pack" >
+      
+		<classes>
+		    
+		    
+		<!--  PVT    -->
+		    
+		    
+	<!-- 	 <class name="scrum.service.test.MP01_ServiceEnab_TC_01_CreateBusinessAccount_Test"/>   -->
+	<!--     <class name="scrum.qm.test.MP_QM_TC_01_PBF_Agent_E2E_BusinessInternet_CompactFlow_Test"/>  -->
+	<!-- 	    <class name="scrum.qm.test.MP09_QM_TC_01_CreateQuoteByGBJ_Internet_TV_Test"/> -->
+	<!-- 	    <class name="scrum.communities.test.MP_Communities_TC_06_Case_Creation_Service_Test"/>	 -->   
+		    
+		    
+   	<class name="scrum.qm.test.MP_QM_TC_01_PBF_Agent_E2E_BusinessInternet_CompactFlow_Test"/>  
+<!--  		<class name="scrum.qm.test.MP09_QM_TC_01_CreateQuoteByGBJ_Internet_TV_Test"/> 
+
+	
+	 		<class name="com.regression_01.test.MP_Regression_OM_GBJ_E2E_CableL2_Test"/> 
+			<class name="scrum.qm.test.MP_QM_TC_01_PBF_Agent_E2E_Flow_Test"/>
+		    
+	<class name="com.regression_01.test.MP_Regression_QM_GBJ_E2E_INT_TV_Standalone_Bundled_Test"/>   
+	<class name="scrum.qm.test.MP09_QM_TC_01_CreateQuoteByGBJ_Internet_TV_Test"/> 
+   	<class name="scrum.qm.test.MP12_QM_TC_01_CreateQuoteByGBJ_IBLC_Test"/>  
+   	 
+	 <class name="scrum.service.test.MP01_ServiceEnab_TC_01_CreateBusinessAccount_Test"/> 
+     <class name="scrum.service.test.MP01_ServiceEnab_TC_02_CreateServiceAccount_Test"/>-->
+  <!-- 	 <class name="scrum.service.test.MP01_ServiceEnab_TC_03_CreateBillingAccount_Test"/> 
+	
+     <class name="scrum.service.test.MP01_ServiceEnab_TC_04_CreateContact_Test"/>   
+      <class name="scrum.service.test.MP01_ServiceEnab_TC_05_EmailToCase_Test"/>
+      <class name="scrum.service.test.MP01_ServiceEnab_TC_06_VerifyAccess_Accounts_Test"/>
+      <class name="scrum.service.test.MP01_ServiceEnab_TC_07_VerifyAccess_Contacts_Test"/>  
+      
+     <class name="scrum.service.test.MP04_ServiceEnab_TC_01_ChangeEmployeeSize_InBusinessAccount_Test"/>
+      <class name="scrum.service.test.MP04_ServiceEnab_TC_02_CreateChildBusinessAccount_Test"/> 
+  
+     <class name="scrum.service.test.MP04_ServiceEnab_TC_03_ChangeLegalNameBusinessAccount_Approve_Test"/>
+        <class name="scrum.service.test.MP04_ServiceEnab_TC_04_ChangeLegalNameBusinessAccount_Reject_Test"/>   
+      <class name="scrum.service.test.MP04_ServiceEnab_TC_05_CaseInQueue_UserNotAllowedToEdit_Test"/>   
+      <class name="scrum.service.test.MP04_ServiceEnab_TC_06_CaseOwned_UserAllowedToEdit_Test"/>  
+      <class name="scrum.service.test.MP04_ServiceEnab_TC_07_UserProactivelyCreatesNewCase_Test"/>  
+      <class name="scrum.service.test.MP04_ServiceEnab_TC_08_CreateQuickText_InsertQuickTextInEmail_Test"/> -->
+      
+     
+  <!--     <class name="scrum.service.test.MP05_ServiceEnab_TC_02_EnableCommunity_ValidateServiceGroup_TrobuleshootAccess_Test"/>   
+      <class name="scrum.service.test.MP06_ServiceEnab_TC_02_Link_DeLink_Account_MasterAccount_Test"/>  
+      <class name="scrum.service.test.MP11_ServiceEnab_TC_02_MandatoryFieldsNotUpdated_CaseNotResolved_MandatoryFieldsUpdated_CaseStausToResolved_Test"/> 
+      <class name="scrum.service.test.MP14_ServiceEnab_CaseInQueue_NotEditable_InProgressCase_NotAllowedToNew_Test"/>  -->
+     
+  <!--    <class name="scrum.service.test.MP_Regression_ServiceEnab_TC_01_Validate_Subscription_Page_Test"/>  
+	  <class name="scrum.service.test.MP_Regression_ServiceEnab_TC_02_Validate_Guided_Case_Creation_Test"/> 
+     
+	  <class name="scrum.service.test.MP_Regression_ServiceEnab_TC_03_Validate_ACR_InContact_DifferentContactRoles_InBusAcc_Test"/>--> 
+  <!--     <class name="scrum.service.test.MP_Regression_ServiceEnab_TC_04_ModifyRoles_Business_Service_Billing_Account_Validate_ACR_Test"/>
+      <class name="scrum.service.test.MP_Regression_ServiceEnab_TC_05_Vaidate_DuplicateContact_InactiveToActiveContacts_CreateIndirectACR_Test"/>
+      <class name="scrum.service.test.MP_Regression_ServiceEnab_TC_06_Validate_ReActivateContact_CreateACR_ModifyRoles_VerifyPremises_Test"/>  
+  		 
+			  <class name="scrum.sales.test.MP01_SalesEnab_TC_01_CreateOpportunity_Test"/>  
+		      <class name="scrum.sales.test.MP01_SalesEnab_TC_02_CreateQuote_OnNetServiceability_Test"/>
+		 	  <class name="scrum.sales.test.MP01_SalesEnab_TC_04_CreateQuote_NewServiceAccount_Test"/>
+		      <class name="scrum.sales.test.MP01_SalesEnab_TC_05_VerifyAccess_Opportunities_Test"/> 
+		
+		      <class name="scrum.sales.test.MP05_SalesEnab_TC_01_VerifyR4B_B2B_Navigation_Test"/>
+		      <class name="scrum.sales.test.MP05_SalesEnab_TC_02_VerifyR4B_B2B_Navigation_ForProductSubProduct_OpportunityCreation_Test"/>
+		
+		
+		   	  <class name="scrum.sales.test.MP_Regression_SalesEnab_TC_01_Validate_AE_Home_Page_Tabs_Test"/>
+		      <class name="scrum.sales.test.MP_Regression_SalesEnab_TC_02_Validate_UploadFiles_Manage_Library_In_Files_Page_Test"/>
+		      <class name="scrum.sales.test.MP_Regression_SalesEnab_TC_03_Validate_Multiple_Existing_ServicableLocations_Test"/>
+		      <class name="scrum.sales.test.MP_Regression_SalesEnab_TC_04_Log_An_Activity_Through_Opportunity_ServiceAccount_Contact"/>
+		      <class name="scrum.sales.test.MP_Regression_SalesEnab_TC_05_R4B_B2B_R4B_Account_Contact_EmpSize_AccStatusUpdate_ValidationTest"/>
+		      <class name="scrum.sales.test.MP_Regression_SalesEnab_TC_06_R4B_B2B_R4B_ContactUpdate_EmpSizeUpdate_ValidationTest"/>   -->
+	
+	<!-- 	    <class name="com.regression_01.test.MP_Regression_QM_GBJ_E2E_INT_TV_Standalone_Bundled_Test"/>   
+  		<class name="scrum.qm.test.MP09_QM_TC_01_CreateQuoteByGBJ_Internet_TV_Test"/>
+  		
+     	      <class name="scrum.qm.test.MP09_QM_TC_02_ValidateInstallationDiscount_Hybridcart_Test"/>
+            <class name="scrum.qm.test.MP09_QM_TC_03_CreateQuoteInHybridCart_Test"/> 
+
+            <class name="scrum.qm.test.MP12_QM_TC_01_CreateQuoteByGBJ_IBLC_Test"/>  -->   
+  
+       <!--      <class name="scrum.qm.test.MP15_QM_TC_01_CreateQuoteByGBJ_RDI_Test"/> --> 
+       
+       
+ 
+      <!--        <class name="scrum.qm.test.MP16_QM_TC_01_Validate_NewSiteContact_Creation_OrderPage_ON_Test"/>
+ 
+          <class name="scrum.om.test.MP03_OM_TC_01_VerifyTaskState_Ready_Running_Task1_Task2_Test"/>
+          <class name="scrum.om.test.MP03_OM_TC_02_VerifyTaskState_Pending_Running_Task1_Task2_Test"/>
+
+  		
+  	    <class name="com.regression_01.test.MP_Regression_QM_GBJ_E2E_INT_TV_Standalone_Bundled_Test"/>   --> 
+	   	
+	   	
+	   	</classes>
+   	
+	</test>
+  	
+ </suite>
+

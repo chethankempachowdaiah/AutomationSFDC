@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="WACC SFDC Test Automation Suite">
+
+	<listeners>
+		<listener class-name="com.framework.base.MyListener" />
+	</listeners>
+
+	<test name="QA Wireless Accleration  Automation Pack">
+		<classes>
+			
+		
+	
+			<!--   <class name = "com.Regression_E2E_WA_FIT_test.WA_TC_01_CreateQuote_VerifyPlansAndBYOD_Test"/>
+		  	  <class name = "com.Regression_E2E_WA_FIT_test.WA_TC_02_CreateQuote_VerifyPlansAndDevices_Test"/> -->  
+			  <class name = "com.Regression_E2E_WA_FIT_test.WA_TC_03_CreateQuote_VerifyPlansAndDevicesWithDP_Acc_Test"/> 
+			<class name = "com.Regression_E2E_WA_FIT_test.WA_TC_04_CreateQuote_VerifyDevicesFirstAndPlans_NoDP_No_Acc_Test"/> 
+			<class name = "com.Regression_E2E_WA_FIT_test.WA_TC_05_CreateQuote_VerifyDeviceFirstAndPlansWithDP_Acc_Test"/>
+			 <class name = "com.Regression_E2E_WA_FIT_test.WA_TC_06_CreateQuote_VerifyDevicesFirstAndPlans_WithDP_No_Acc_Test"/>  
+			 <!-- <class name = "com.Regression_E2E_WA_FIT_test.WA_TC_07_Create_Quote_Verify_CreditCheck_Order_Approval_Test"/> -->
+			 <!--  <class name = "com.Regression_E2E_WA_FIT_test.WA_TC_08_Create_Quote_Verify_FraudCheck_Order_Approval_Test"/> -->
+			
+			
+			
+
+			 <class name= "com.Regression_WA_FIT_test.WA_TC_04_2789_VerifyAccessories_Avaialbility_Add_Button_Status_Test"/>
+			  <class name= "com.Regression_WA_FIT_test.WA_TC_05_5444_Update_Credit_Limit_Value_Test"/>
+			<class name= "com.Regression_WA_FIT_test.WA_TC_03_3637_VerifyFraudHighRiskFlag_Test"/>
+			  <class name= "com.Regression_WA_FIT_test.WA_TC_34_2742_VerifynewAddOn_AddedInCart_submit_Test"/>  
+			 <class name= "com.Regression_WA_FIT_test.WA_TC_01_1932_Verify_PortNumber_Duplicate_Test"/> 
+			<class name= "com.Regression_WA_FIT_test.WA_TC_56_3344_Verify_CapacityFilterForDevices_Test"/>
+			 <class name= "com.Regression_WA_FIT_test.WA_TC_02_1451_Verify_AccessoryFilter_Details_Test"/> 
+			<class name= "com.Regression_WA_FIT_test.WA_TC_37_2824_WirelessMarginCalculationsForDPandApplecare_Test"/>
+		
+			  <class name= "com.Regression_WA_FIT_test.WA_TC_57_3333_Verify_SaveForLater_Resume_Test"/>
+			<class name= "com.Regression_WA_FIT_test.WA_TC_33_2741_VerifynewPlan_AddedInCart_submit_Test"/> 
+			<class name= "com.Regression_WA_FIT_test.WA_TC_47_4281_Verify_BYOD_ContinueButton_Test"/>
+				<class name= "com.Regression_WA_FIT_test.WA_TC_59305_CreateQuote_ESign_Valid_Resume_Denied_Order_Test"/> 
+		</classes>
+	</test>
+</suite>

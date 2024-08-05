@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Mission Possible SFDC Test Automation Suite">
+
+    <listeners>
+        <listener class-name="com.framework.base.MyListener" />
+         <!--<listener class-name="com.framework.base.AnnotationTransformer"/>  --> 
+    </listeners>
+    
+    <test  name="QA Mission Possible Sanity and Regression Automation Pack" >
+      
+		<classes> 
+		
+		<class name="scrum.sales.test.MP_Regression_SalesEnab_TC_02_Validate_UploadFiles_Manage_Library_In_Files_Page_Test"/>
+	  
+		 <class name="scrum.service.test.MP_Regression_ServiceEnab_TC_01_Validate_Subscription_Page_Test"/>
+	    
+		<class name="scrum.service.test.MP_Regression_ServiceEnab_TC_02_Validate_Guided_Case_Creation_Test"/>
+	  
+	       
+	   <class name="scrum.sales.test.MP_Regression_SalesEnab_TC_04_Log_An_Activity_Through_Opportunity_ServiceAccount_Contact"/>
+    	
+	    
+	        <class name="scrum.communities.test.MP_Communities_TC_02_VerifyMBH_QuickLinks_ToggleCom_Footer_Test"/>
+	      
+		   <class name="scrum.communities.test.MP_Communities_TC_03_VerifyCaseAttachment_Upload_Delete_Test"/>
+	      <class name="scrum.communities.test.MP_Communities_TC_04_VerifyOrderDetails_Test"/>
+	     <class name="scrum.communities.test.MP_Communities_TC_05_Validation_Of_Case_Layout_DynamicReasonList_BasedOn_Product_AccountNames_CaseComments_Test"/>
+	      <class name="scrum.communities.test.MP_Communities_TC_01_VerifyMBH_ComBadge_Header_BusCases_ComTabs_Test"/>
+		<class name="scrum.sales.test.MP_Regression_SalesEnab_TC_01_Validate_AE_Home_Page_Tabs_Test"/>
+		  
+	   	</classes>
+   	
+	</test>
+  	
+ </suite>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="WACC SFDC Test Automation Suite">
+
+	<listeners>
+		<listener class-name="com.framework.base.MyListener" />
+	</listeners>
+
+	<test name="QA Wireless Accleration  Automation Pack">
+		<classes>
+		<class name="com.Regression_WADEVQA_test.WA_TC_03_CreateQuote_VerifyPlansAndDevicesWithDP_Acc_Test" /> 
+		<!-- <class name="com.Regression_WADEVQA_test.WA_TC_03_CreateQuote_VerifyPlansAndDevicesWithDP_Acc_Test" /> 
+		<class name = "scrum.macd.test.MACD_TC_13_WACC5106_ConfirmationofDocusignEmailSenTest"/> -->
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Mission Possible SFDC Test Automation Suite">
+
+    <listeners>
+        <listener class-name="com.framework.base.MyListener" />
+         <!--<listener class-name="com.framework.base.AnnotationTransformer"/>  --> 
+    </listeners>
+    
+    <test  name="QA Mission Possible : Communities Automation Pack" >
+      
+		<classes>
+		 
+		   <class name="scrum.communities.test.MP_Communities_TC_05_Validation_Of_Case_Layout_DynamicReasonList_BasedOn_Product_AccountNames_CaseComments_Test"/>
+	 <class name="scrum.communities.test.MP_Communities_TC_04_VerifyOrderDetails_Test"/>
+	   
+		   <!--  <class name="scrum.communities.test.MP_Communities_TC_06_Case_Creation_Service_Test"/>
+			<class name="scrum.communities.test.MP_Communities_TC_02_VerifyMBH_QuickLinks_ToggleCom_Footer_Test"/>
+		 
+		     <class name="scrum.communities.test.MP_Communities_TC_04_VerifyOrderDetails_Test"/>
+	   
+		   
+		  
+		    <class name="scrum.qm.test.MP_QM_TC_01_PBF_Agent_E2E_RDI_CompactFlow_Test"/>
+		  
+		   <class name="scrum.communities.test.MP_Communities_TC_08_PBF_Customer_E2E_CompactFlow_Test"/>
+		
+		   <class name="scrum.qm.test.MP_QM_TC_01_PBF_Agent_E2E_BusinessInternet_CompactFlow_Test"/>
+		 <class name="scrum.qm.test.MP_QM_TC_01_PBF_Agent_E2E_BusinessTV_Test"/>
+		
+		   
+		      <class name="scrum.communities.test.MP_Communities_TC_05_Validation_Of_Case_Layout_DynamicReasonList_BasedOn_Product_AccountNames_CaseComments_Test"/>
+		 
+		  <class name="scrum.communities.test.MP_Communities_TC_06_Case_Creation_TechnicalSupport_Test"/> 
+		
+		  <class name="scrum.qm.test.MP_QM_TC_01_PBF_Agent_E2E_BusIntTVOff365_CompactFlow_Test"/>
+		
+		  
+		   
+		   <class name="scrum.communities.test.MP_Communities_TC_03_VerifyCaseAttachment_Upload_Delete_Test"/>
+	   
+		     <class name="scrum.qm.test.MP_QM_TC_01_PBF_Agent_E2E_RDI_CompactFlow_Test"/>
+		
+		  
+		
+		   <class name="scrum.qm.test.MP_QM_TC_01_PBF_Agent_E2E_BusinessInternet_Sanity_Test"/>
+			<class name="scrum.qm.test.MP_QM_TC_03_PartnerCommunities_PBF_E2E_BusIntTVOff365_CompactFlow_Test"/>
+		<class name="scrum.qm.test.MP_QM_TC_01_PBF_Agent_RDI_54365_SpecSheet_Test"/>
+		<class name="scrum.qm.test.MP_QM_TC_04_PartnerCommunities_PBF_RDI_54365_SpecSheet_Test"/>
+		<class name="scrum.qm.test.MP_QM_TC_01_PBF_Agent_E2E_Multisite_CompactFlow_Test"/>
+		 <class name="scrum.qm.test.MP_QM_TC_01_PBF_Agent_E2E_BusIntTVOff365_CompactFlow_Test"/> 
+		
+		 <class name="scrum.communities.test.MP_Communities_TC_01_VerifyMBH_ComBadge_Header_BusCases_ComTabs_Test"/>
+		  
+		  <class name="scrum.communities.test.MP_Communities_TC_02_VerifyMBH_QuickLinks_ToggleCom_Footer_Test"/>
+	      
+		
+		<class name="scrum.qm.test.MP_QM_TC_01_PBF_Agent_E2E_BusinessInternet_Sanity_Test"/>
+		
+		
+		    <class name="scrum.qm.test.MP_QM_TC_02_PartnerCommunities_PBF_E2E_RDI_Flow_Test"/>
+		
+		
+		
+		    <class name="scrum.communities.test.MP_Communities_TC_09_PBF_Customer_LostOpportunity_Test"/>
+		 <class name="scrum.qm.test.MP_QM_TC_02_PartnerCommunities_PBF_E2E_Flow_Test"/>
+		 <class name="scrum.communities.test.MP_Communities_TC_08_PBF_Customer_E2E_Flow_Test"/>
+		  
+		 <class name="scrum.qm.test.MP_QM_TC_01_PBF_Agent_E2E_CompactFlow_Test"/>
+		
+		      <class name="scrum.qm.test.MP_QM_TC_01_PBF_Agent_E2E_Flow_Test"/>
+<class name="scrum.communities.test.MP_Communities_TC_06_Case_Creation_Service_Test"/>
+		  
+		
+		<class name="scrum.communities.test.MP_Communities_TC_09_PBF_Customer_LostOpportunity_Test"/>
+		
+		  <class name="scrum.qm.test.MP_QM_TC_01_PBF_Agent_E2E_Flow_Test"/>
+		
+		
+	      -->
+	 	</classes>
+   	
+	</test>
+  	
+ </suite>
+

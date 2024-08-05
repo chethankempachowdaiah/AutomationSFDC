@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WACC SFDC Test Automation Suite">
+
+	<listeners>
+		<listener class-name="com.framework.base.MyListener" />
+	</listeners>
+
+	<test name="QA Wireless Accleration  Automation Pack">
+		<classes>
+			<!-- <class name="scrum.wa.test.WA_TC_01_OffMode_Validate_CreateQuotePBF_NotPresent_Test"/>
+			 <class name= "scrum.wa.test.WA_TC_02_CreateQuoteByPBF_VerifyProductDetails_Test"/> 
+			<class name="scrum.wa.test.WA_TC_03_Create_Accounts_TestData_Test"/>
+			<class name="scrum.wa.test.WA_TC_04_AcceptQuoteBy_E_Signature_Test" /> 
+			<class name="scrum.wa.test.WA_TC_05_AcceptQuoteBy_Verbal_Test" /> 
+			<class name="scrum.wa.test.WA_TC_06_RetrieveSavedQuote_Test" />
+			<class name="scrum.wa.test.WA_TC_07_OrchestrationTasks_Test" />
+			<class name="scrum.wa.test.WA_TC_08_ShopWirelessDevices_Test" /> 
+			<class name="scrum.wa.test.WA_TC_09_CreditDiscount_Device" />  
+			<class name="scrum.wa.test.WA_TC_10_Device_Availaibility_Check" />  
+			<class name= "scrum.wa.test.WA_TC_11_VerifyProgressiveDiscSectionsPricePlanFirst"/> 
+			<class name= "scrum.wa.test.WA_TC_15_SummaryPage_FinancedDevice"/> -->
+			<!--<class name= "scrum.wa.test.WA_TC_16_Verify_Quantity_AccessoriesDetailsPageTest">
+				<methods>
+					<include name = "validate_Accessory_Qty_Zero"/>
+					 <include name = "validate_Accessory_Qty_More_Than_100"/>
+					<include name = "validate_Accessory_Qty_between_1To100"/>
+				</methods>
+			</class>
+			<class name= "scrum.wa.test.WA_TC_17_Validate_CartBannerAfter_AddtoCartTest"/>
+			<class name= "scrum.wa.test.WA_TC_18_Validate_Filter_ShopForAceessoriesPageTest">
+				<methods>
+					<include name = "validate_Page_Filter"/>
+					<include name = "validate_ResetFilterOnFilterBubble"/>
+					<include name = "validate_CloseIconOnFilterBubble"/>
+					<include name = "validate_BrandName_DeviceName_ShopForAccessoriesPage"/>
+				</methods>
+			</class>
+			<class name= "scrum.wa.test.WA_TC_19_VerifyAddedAccessoriesOnShoppingCartPageTest">
+				<methods>
+					<include name = "Validate_pageNavigation_ShopAccessoriesPage"/>
+					<include name = "Validate_AccessoriesAdded_ViewOnShoppingCart"/> 	
+				</methods> 
+			</class>
+			<class name= "scrum.wa.test.WA_TC_20_VerifyValueOnShopForAccessoriesPageTest"/>
+			<class name ="scrum.wa.test.WA_TC_21_VerifyAccessoryDetailsPageTest"/>
+			<class name = "scrum.wa.test.WA_TC_23_Verify_DefaultValue_AccessoriesDetailsPageTest"/>
+			<class name = "scrum.wa.test.WA_TC_24_Verify_CloseFilterIcon_ShopForAccessoryPage_Test"/>
+			<class name = "scrum.wa.test.WA_TC_25_Verify_Add_Remove_Item_InShoppingCart_Test"/>
+			<class name = "scrum.wa.test.WA_TC_26_VerifyAddedItemInShoppingCartPageTest"/> 
+			<class name = "scrum.wa.test.WA_TC_27_VerifyChangeItemQuantityInShoppingCartPageTest"/>
+			<class name = "scrum.wa.test.WA_TC_28_VerifyRemoveItemsInShoppingCartPageTest"/>
+			<class name = "scrum.wa.test.WA_TC_29_VerifyFlatDiscountOnQuoteInCartTest"/>
+			<class name = "scrum.wa.test.WA_TC_30_VerifyStockAvailabilityOnAccessoriesDetailsPageTest"/>
+			<class name = "scrum.wa.test.WA_TC_31_VerifyFooterPriceAfterFlatDiscountAppliedTest"/>
+			<class name = "scrum.wa.test.WA_TC_32_VerifyDP_InCartTest"/>
+			<class name = "scrum.wa.test.WA_TC_33_VerifynewPlan_AddedInCart_submit"/>
+			<class name = "scrum.wa.test.WA_TC_34_VerifynewAddOn_AddedInCart_submit"/>
+			<class name = "scrum.wa.test.WA_TC_46_Verify_36MonthPlanRemovedForDevices"/>
+			<class name = "scrum.wa.test.WA_TC_47_Verify_BYOD_ContinueButton"/>
+			<class name = "scrum.wa.test.WA_TC_52_VerifySystemSetUpFee_InCart"/>
+			<class name = "scrum.wa.test.WA_TC_55_Verify_TermsAndConditionURl_InPDF"/>
+			<class name = "scrum.wa.test.WA_TC_56_Verify_CapacityFilterForDevices"/>
+			<class name = "scrum.wa.test.WA_TC_57_Verify_SaveForLater_Resume_Test"/>
+			<class name = "scrum.wa.test.WA_TC_63_Verify_Accessory_Filter_Based_On_Model_Compatibility"/>
+			<class name = "scrum.wa.test.WA_TC_72_Verify_QuotePDFEnhancement_Test"/>
+			<class name = "scrum.wa.test.WA_TC_72_Verify_QuotePDFEnhancement_Test"/>
+			<class name = "scrum.wa.test.WA_TC_55_Verify_TermsAndConditionURl_InPDF"/>-->
+			
+
+			<!--<class name = "scrum.macd.test.MACD_TC_01_WACC4465_Verify_RemoveDPOptionTest"/>
+			<class name = "scrum.macd.test.MACD_TC_02_WACC4472_Verify_AddDPOptionTest"/>
+			<class name = "scrum.macd.test.MACD_TC_03_WACC4003And3764_Verify_RemoveDisplayVoicemailResetWarning_Test"/>
+			<class name = "scrum.macd.test.MACD_TC_04_WACC3693_Verify_AddDisplayVoicemailResetWarning_Test"/>
+			<class name = "scrum.macd.test.MACD_TC_05_WACC4473_Verify_AddDPSelectEffectiveDate_Test"/>
+			<class name = "scrum.macd.test.MACD_TC_08_WACC4769_Verify_RemoveDPSelectEffectiveDate_Test"/>
+			<class name = "scrum.macd.test.MACD_TC_09_WACC3932_Verify_AddDisplayValidAddOns_Test"/>
+			<class name = "scrum.macd.test.MACD_TC_15_WACC5108_UpdatedTermsandConditionsLink_Test"/>
+			<class name = "scrum.macd.test.MACD_TC_16_WACC3694_Verify_ADDDisplayAddOnsWindowAndSelectAddOns_Test"/>-->
+			<class name = "scrum.macd.test.MACD_TC_25_WACC5880_AppleCareEffectiveDateInReviewCTNScreen_Test"/>
+
+		</classes>
+	</test>
+</suite>
